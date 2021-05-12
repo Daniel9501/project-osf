@@ -1,0 +1,29 @@
+.logoImg{
+    height: 40px;
+}
+
+.logo{
+    padding: 0;
+    
+}
+#basic-navbar-nav{
+    background-color: rgb(38,42,50);
+    border-radius: 0;
+}
+
+.navbar-light .navbar-toggler{
+    border:none;
+}
+
+.navbar{
+    padding: 0;
+    height: 60px;
+    border-bottom: 2px solid rgb(243,240,234);
+}
+.navbar-toggler{
+    padding: 0;
+}
+
+.hamburger-react{
+    color:rgb(38,42,50);
+}
