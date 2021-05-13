@@ -1,10 +1,12 @@
 import React from 'react';
-import { Navbar,Nav,NavDropdown,Form,FormControl,Button } from 'react-bootstrap';
+import { Navbar,Nav,NavDropdown, Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavbarMenu.scss';
 import './NavbarMenu.css';
 import Hamburger from '../../../node_modules/hamburger-react';
 import logo from '../Img/logo.webp';
+import NavImage from '../Img/dropdown-img.webp';
+
 
 function NavbarMenu() {
     return(
@@ -18,39 +20,50 @@ function NavbarMenu() {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <NavDropdown title="SERVICES" id="basic-nav-dropdown">
-                        <NavDropdown title="PRODUCT CATEGORIES" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Accessories</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Gadgets</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Alcohol</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Art</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Books</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Drink</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Electronics</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2"></NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Gadgets</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Gadgets</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Gadgets</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Gadgets</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Gadgets</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Gadgets</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Gadgets</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Gadgets</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Gadgets</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Gadgets</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Gadgets</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Gadgets</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Gadgets</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Gadgets</NavDropdown.Item>
+                            <NavDropdown title="PRODUCT CATEGORIES" id="nav-drop-categ">
+                                <NavDropdown.Item href="#action/3.1">Accessories</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2">Alcohol</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3">Art</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.4">Books</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.5">Drink</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.6">Electronics</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.7">Flower & Plants</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.8">Food</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.9">Gadgets</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.10">Garden</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.11">Grocery</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.12">Home</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.13">Jewelry</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.14">Kids & Baby</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.15">Men's Fashion</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.16">Mobile</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.17">Motorcycles</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.18">Movies</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.19">Music</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.20">Ofiice</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.21">Pets</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.22">Romantic</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.23">Sport</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.24">Toys</NavDropdown.Item>
+                            </NavDropdown>
+                        
+                            <NavDropdown title="SALE" id="nav-drop-categ">
+                                <NavDropdown.Item href="#action/3.1">Accessories</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2">Alcohol</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3">Art</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.4">Books</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.5">Drink</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.6">Electronics</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.7">Flower & Plants</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.8">Food</NavDropdown.Item>
+                            </NavDropdown>
                         </NavDropdown>
-                        {/* <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item> */}
-                    </NavDropdown>
+                        <NavDropdown title="COMPANY" id="basic-nav-dropdown"></NavDropdown>
+                        <NavDropdown title="LIBRARY" id="basic-nav-dropdown"></NavDropdown>          
+                        <NavDropdown title="CONTACT US" id="basic-nav-dropdown"></NavDropdown>
+                        <Image src={NavImage} fluid/>
                 </Nav>
-                <Form inline>
-                    <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                    <Button variant="outline-success" style={{marginTop: 40 }}>Search</Button>
-                </Form>
+                
             </Navbar.Collapse>
         </Navbar>
     );
