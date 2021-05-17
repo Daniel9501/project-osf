@@ -1,0 +1,84 @@
+import React from 'react';
+import { Accordion, Card, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../NavbarMenu/NavbarMenu.css';
+import Facebook from '../Img/Socialicons/f.png';
+import Google from '../Img/Socialicons/g.png';
+import Twitter from '../Img/Socialicons/t.png';
+import Pinterest from '../Img/Socialicons/p.png';
+import Caret from '../Img/caret.png';
+function Pagesfooter() {
+    return(
+        <div className="footerDetails"> {/*Creat Footer details */}
+            <div className="copyRight">
+                <p>&copy;Copyright2019.<br />All rights reserved.</p>
+            </div>
+            <Accordion defaultActiveKey="0">
+                <Card>
+                    <Card.Header>
+                        <Accordion.Toggle as={Button} variant="link" eventKey="1">
+                            <div className="accordion-title">
+                                CONTACT
+                            </div>
+                            <div>
+                                <img className="caret" src={Caret} alt="Caret" />
+                            </div>
+                        </Accordion.Toggle>
+                    </Card.Header>
+                    <Accordion.Collapse eventKey="1">
+                        <div className="details">
+                            <p>Headquarters:<br />
+                            5600, Blvd. des Galeries, Bur 530<br />
+                            Quebeb, Quebec G2K 2H6<br /><br />
+                            contact@osf-global.com<br /><br />
+                            +1 (888) 548-4344</p>
+                        </div>
+                    </Accordion.Collapse>
+                </Card>
+                <Card>
+                    <Card.Header>
+                        <Accordion.Toggle as={Button} variant="link" eventKey="2">
+                            <div className="accordion-title">
+                                CATEGORIES
+                            </div>
+                            <div>
+                                <img className="caret" src={Caret} alt="Caret" />
+                            </div>
+                        </Accordion.Toggle>
+                    </Card.Header>
+                    <Accordion.Collapse eventKey="2">
+                        <div className="details">
+                            <p>Add, copy, or remove a text</p>
+                        </div>
+                    </Accordion.Collapse>
+                </Card>
+                <Card>
+                    <Card.Header>
+                        <Accordion.Toggle as={Button} variant="link" eventKey="3">
+                            <div className="accordion-title"> 
+                                ABOUT
+                            </div>
+                            <div>
+                                <img className="caret" src={Caret} alt="Caret" />
+                            </div>
+                        </Accordion.Toggle>
+                    </Card.Header>
+                    <Accordion.Collapse eventKey="3">
+                        <div className="details">
+                            <p>Add, copy, or remove a text</p>
+                        </div>
+                    </Accordion.Collapse>
+                </Card>
+            </Accordion>
+            <div className="socialIcons">
+                <img className="facebook" src={Facebook} alt="Facebook" />
+                <img className="google dist" src={Google} alt="Google" />
+                <img className="twitter dist" src={Twitter} alt="Twitter" />
+                <img className="pinterest dist" src={Pinterest} alt="Pinterest" />
+            </div>
+        </div>
+    );
+}
+
+export default Pagesfooter;
+

@@ -75,7 +75,7 @@
 
 .dropdown-toggle[aria-expanded="true"]:after {
     transform: rotate(180deg);
-  }
+}
 
 .dropdown-toggle:after {
     transition: 0.5s;
@@ -135,7 +135,7 @@
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    background-color: rgb(38,42,50);
+    background-color: rgb(38, 42, 50);
 }
 
 .imgFooter{
@@ -144,6 +144,7 @@
     height: 23px;
     margin-left: 18px;
     margin-right:18px;
+    filter: invert(74%) sepia(0%) saturate(1108%) hue-rotate(231deg) brightness(94%) contrast(100%); /* convert rgb(178,178,178) to filter */
 }
 
 
@@ -151,4 +152,61 @@
 .footerDetails { 
     width: 100%;
     padding-bottom: 62px;
+}
+
+
+.footerDetails .card-header, .card{
+    border: none;
+    background-color: white;
+}
+.footerDetails .card-header{
+    padding-right: 13px;
+    padding-left: 16px;
+
+}
+
+.footerDetails .btn-link{
+    color: black;
+    text-decoration: none;
+}
+
+.socialIcons{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 28px;
+    filter: invert(74%) sepia(0%) saturate(1108%) hue-rotate(231deg) brightness(94%) contrast(100%); /* convert rgb(178,178,178) to filter */
+}
+
+.socialIcons .dist{
+    margin-left: 23px;
+}
+
+.card-header .btn{
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.details{
+    padding-left: 16px;
+}
+.details p{
+    margin:0;
+    font-size: 13px;
+}
+
+.accordion-title{
+    font-size: 13px;
+    font-weight: 600;
+}
+.copyRight{
+    width: 100%;
+    padding-left: 16px;
+}
+
+.copyRight p{
+    font-size: 13px;
+
 }
