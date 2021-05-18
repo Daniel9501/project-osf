@@ -1,14 +1,14 @@
 import React from 'react';
-import { Carousel, Button } from '../../../node_modules/react-bootstrap';
+import { Carousel, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import './main.css';
-import Img1 from '../Img/Main/firstImage1.webp';
-import Img2 from '../Img/Main/firstImage2.webp';
-import Img3 from '../Img/Main/firstImage3.webp';
-import Img4 from '../Img/Main/firstImage4.webp';
+import './Slider.css';
+import Img1 from '../../Img/Main/firstImage1.webp';
+import Img2 from '../../Img/Main/firstImage2.webp';
+import Img3 from '../../Img/Main/firstImage3.webp';
+import Img4 from '../../Img/Main/firstImage4.webp';
 
-function Main() {
+function Slider() {
     const [index, setIndex] = React.useState(0);
 
     const handleSelect = (selectedIndex) => {
@@ -59,4 +59,4 @@ doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veri
     );
   }
 
-export default Main;
+export default Slider;

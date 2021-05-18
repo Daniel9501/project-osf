@@ -1,0 +1,85 @@
+.sales{
+    width: 270px;
+    height: 558px;
+    margin: 0;
+    padding: 0;
+    /* background-color: rgba(0, 0, 0, 0.111); */
+}
+
+.sales .image{
+    padding-top: 25px;
+    height: 335px;
+    overflow: hidden;
+}
+
+.sales .image img{
+    max-width: 100%;
+    display: block;
+    border-radius: 4px;
+}
+
+
+.sales .text{
+    width: 100%;
+    margin-top: -266px;
+}
+
+.text h1, h3, h4, h5{
+    text-align:center;
+}
+
+.text h1{
+    font-size: 74px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    margin-bottom: 74px;
+}
+.text h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 110px;
+}
+
+.text h4{
+    font-size: 14px;
+}
+
+.text h5{
+    font-size: 11px;
+}
+.facebookButton{
+    width: 100%;
+
+}
+.MuiButton-outlinedPrimary{
+    color: rgb(58,91,150);
+    border: 2px solid rgb(58,91,150);
+    border-radius: 25px;
+}
+
+
+.MuiButton-root {
+    border-radius: 25px !important;
+    color: rgb(58,91,150) !important;
+    border: 2px solid rgb(58,91,150) !important;
+}
+
+.MuiButton-label{
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.MuiButton-label img{
+    height: 11px;
+    color: rgb(58,91,150);
+    filter: invert(33%) sepia(8%) saturate(4055%) hue-rotate(180deg) brightness(98%) contrast(88%);
+    margin-right: 21px;
+}
+
+.MuiButtonBase-root.MuiButton-root.MuiButton-outlined.MuiButton-outlinedPrimary{
+    padding: 11px 22px 11px 22px;
+    width: 151px;
+    margin-left: 59px;
+    margin-right: auto;
+}
