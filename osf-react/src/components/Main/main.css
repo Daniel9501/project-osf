@@ -1,0 +1,116 @@
+.main{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.firstDiv{
+    height: 516px;
+    padding: 22px 13px 22px 16px;
+    overflow:hidden;
+}
+
+.firstDiv .firstImage{
+    width: 100%;
+    height: 472px;
+    border-radius: 3px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    display: none;
+}
+.carousel-indicators{
+    margin-bottom: 19px;
+
+}
+
+.carousel-indicators li {
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background-color: rgb(181, 184, 181);
+    opacity: unset;
+    margin-left: 9px;
+    margin-right: 9px;
+    
+  }
+.carousel-indicators .active{
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+    opacity: unset;
+    margin-left: 9px;
+    margin-right: 9px;
+    bottom: 0;
+    
+}
+
+.carousel-caption{
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: 23px 16px 90px 17px;
+    padding: 0;
+    
+}
+
+
+
+.carousel-caption .title{
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    text-align: left;
+    line-height: 39px;
+    padding-bottom: 43px;
+}
+
+.carousel-caption .content{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    text-align: left;
+    padding-bottom: 52px;
+    line-height: 17px;
+    
+}
+
+.carousel-caption .btn{
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid rgb(181, 184, 181);
+    border-radius: 25px;
+    width: 147px;
+    height: 36px;
+    margin: 0;
+    padding-top: 1px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    
+}
+.carousel-caption .btn:hover{
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid rgb(181, 184, 181);
+    border-radius: 25px;
+    width: 147px;
+    height: 36px;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.btn.focus, .btn:focus{
+    box-shadow: none;
+}
+
+.btn-primary.focus, .btn-primary:focus{
+    box-shadow: none;
+    
+}
+
+.carousel-indicators .active{
+    margin-bottom: -20px;
+}
+
