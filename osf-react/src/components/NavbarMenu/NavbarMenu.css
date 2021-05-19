@@ -4,8 +4,13 @@
 }
 .logo{
     padding: 0;
-    
 }
+.navigationMenu{
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+}
+
 #basic-navbar-nav, .dropdown-menu{
     background-color: rgb(38,42,50);
     border-radius: 0;
@@ -26,10 +31,6 @@
     border-bottom: 2px solid rgb(243,240,234);
     justify-content: unset;
     width: 100%;
-
-    
-
-
 }
 .navbar-toggler{
     padding: 6px;
@@ -151,7 +152,7 @@
 
 .footerDetails { 
     width: 100%;
-    padding-bottom: 62px;
+    padding-bottom: 121px;
 }
 
 
