@@ -1,0 +1,82 @@
+.mainServices{
+    width: 100%;
+    height: 572px;
+    background: rgb(69,65,62);
+    overflow: hidden;
+    position: relative;
+    display:grid;
+    grid-template: 1fr 1fr;
+    gap: 7px;
+    grid-template-areas:
+        "deliveryPackages focus"
+        "method recycle"
+        "clipboar knowledge"
+    ;
+    border-bottom: 1px solid rgb(243,242,242);
+}
+
+.deliveryPackages{
+    grid-area: deliveryPackages;
+    position: relative;
+}
+.focus{
+    grid-area: focus;
+}
+.method{
+    grid-area: method;
+}
+.recycle{
+    grid-area: recycle;
+}
+.clipboar{
+    grid-area: clipboar;
+}
+.knowledge{
+    grid-area: knowledge;
+}
+
+.title{
+    color: white;
+    margin-top: 29px;
+    font-size: 22px;
+    margin-bottom: 23px;
+    
+}
+.text{
+    font-size: 16px;
+    text-align:left;
+    line-height: 95%;
+    color: rgb(134,131,128);
+    letter-spacing: -0.1px;
+}
+.deliveryPackages img{
+    margin-top: 39px;
+    width: 32.82%;
+    margin-left: 38.59%;
+    margin-right: 28.59%;
+}
+.recycle img{
+    margin-top: 39px;
+    width: 35%;
+    margin-left: 28.5%;
+    margin-right: 38.5%;
+}
+.clipboard img{
+    margin-top: 39px;
+    width: 32.82%;
+    margin-left: 38.59%;
+    margin-right: 28.59%;
+    margin-bottom: 53px;
+}
+
+.right{
+    padding-right: 5% ;
+}
+
+.left{
+    padding-left: 5%;
+}
+
+.text-bottom{
+    margin-bottom: 53px;
+}
