@@ -1,0 +1,141 @@
+.products{
+    margin-top: 70px;
+    width: 100%;
+    height: 507px;
+    background-color: rgb(38,42,50);
+    border-top: 1px solid rgb(102,106,114);
+    border-bottom: 1px solid rgb(102,106,114);
+    align-items: center;
+}
+
+.products .title{
+    height: 38px;
+    margin: 25px 14px 7px 16px;
+    background-color: rgb(38,42,50);
+} 
+.cardCard{
+    height:365px;
+    width: 100%;
+    border-radius: 5px;
+}
+.products .card .imgHover{
+    display: flex;
+    position: absolute;
+    margin-top: -0.7px;
+    margin-left: -1.2px;
+    width: 100.5%;
+    height: 100.7%;
+}
+.imgHover:hover{
+    display: none;
+}
+.cardImage{
+    height:260px;
+    overflow: hidden;
+}
+.cardImage img{
+    width: 100%;
+    height: 100%;
+}
+.cardTitle{
+    width: 221px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cardTitle h3{
+    width: 221px;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.01px;
+}
+.cardButton{
+    align-items: center;
+}
+
+.cardButton .btn{
+    align-items: center;
+    background-color: white;
+    border: none;
+    width: 100%;
+}
+.products .card{
+    /* overflow: hidden; */
+    margin-left: 16px;
+    margin-right: 14px;
+    height: 365px;
+    border-radius: 8px;
+}
+.slick-list{
+    width: 100%;
+    height: 365px;
+
+}
+
+.products .title h4{
+    padding: 0;
+    margin:0;
+    line-height: normal;
+    text-align: center;
+    position: relative;
+    color: white;
+    z-index: 999;
+}
+.products .title h4::before{
+    content: "";
+    display: block;
+    width: 170px;
+    height: 2px;
+    position: absolute;
+    background: rgb(102,106,114);
+    left: 0;
+    top: 50%;
+    z-index: -2;
+}
+.products .title h4::after{
+    content: "";
+    display: block;
+    width: 170px;
+    height: 2px;
+    position: absolute;
+    background: rgb(102,106,114);
+    right: 0;
+    top: 50%;
+    z-index: -2;
+}
+
+.title h4 span{
+    background-color: rgb(38,42,50);
+    padding-left: 25px;
+    padding-right:25px;
+    z-index: 1000;
+}
+/* Slider Dots */
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+    margin-bottom: -40px;
+  }
+  .slick-dots li {
+    margin: 0 0.25rem;
+  }
+  .slick-dots li button {
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    padding: 0;
+    border-radius: 100%;
+    background-color:rgb(147,149,153);
+    text-indent: -9999px;
+  }
+  .slick-dots li.slick-active button {
+    width: 13px;
+    height: 13px; 
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 100%;
+  }
