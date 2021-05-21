@@ -71,7 +71,7 @@ export class Cards extends Component {
     render() {
         return (
             <div className="container">
-                 {photos.map((photo) => {
+                {photos.map((photo) => {
                     return(
                         <div className="card-container">
 
@@ -90,10 +90,14 @@ export class Cards extends Component {
                                     </a>
                                 </button>
                             </div>   
-                        </div>
-                        
+                        </div> 
                     )
                 })}
+                <div className="loadMore">
+                    <button>
+                        LOAD MORE
+                    </button>
+                </div>
             </div>
         )
     }
