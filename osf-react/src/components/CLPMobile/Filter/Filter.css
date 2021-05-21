@@ -1,0 +1,42 @@
+.aaa{
+    background-color: rgba(0, 128, 128, 0);
+    text-align: center;
+}
+.row{
+    margin: 0;
+    padding: 0;
+}
+
+.aaa .handleChange{
+    margin-bottom: 30px;
+    background-color: rgba(0, 128, 128, 0);
+    border: none;
+    color: rgb(132,188,34);
+}
+
+.filter{
+    background-color: rgba(181, 35, 35, 0.248);
+}
+
+.row{
+    padding-bottom: 20px;
+    width: 100%;
+}
+.row .name{
+    width: 22%;
+    background-color: white;
+    height:24px;
+}
+.row .dropdown{
+    width: 78%;
+    height:24px;
+}
+.row .list ul li{
+    display:inline-block;
+    border: 2px solid red;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    margin-left: 7px;
+    margin-top: 5px;
+}
