@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer.js';
 import Pagesfooter from './components/PagesFooter/PagesFooter.js';
 import ClpBreadCrumb from './components/CLPMobile/BreadCrumb/ClpBreadCrumb.js'
 import ClpServices from './components/CLPMobile/Title/ClpServices.js'
+import Filter from './components/CLPMobile/Filter/Filter.js'
 import './CategoryLandingPage.css';
 import Cards from './components/CLPMobile/Cards/Cards.js';
 function CategoryLandingPage() {
@@ -15,6 +16,7 @@ function CategoryLandingPage() {
         </div>
         <div className="mainPage">
             <ClpBreadCrumb />
+            <Filter />
             <ClpServices />
             <Cards />
             <Pagesfooter />
