@@ -2,11 +2,11 @@ import React from 'react';
 import { Navbar, Image} from 'react-bootstrap';
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../NavbarMenu/NavbarMenu.css';
 import Search from '../Img/search.png';
 import ProfileUser from '../Img/profileUser.png'; 
 import Heart from '../Img/Heart.png';
 import BagForShopping from '../Img/BagForShopping.png';
+import '../NavbarMenu/NavbarMenu.css';
 import './Footer.css';
 import Login from '../Login/Login.js';
 function Footer() {
