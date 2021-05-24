@@ -85,8 +85,8 @@ class Products extends Component{
         return (
             <div className="products">
                 <div className="title">
-                    <h4>
-                        <span>
+                    <h4 className="lineProducts">
+                        <span className="popularItems">
                             Popular Items 
                         </span>
                     </h4>
@@ -98,13 +98,13 @@ class Products extends Component{
                             return(
                                 <div className="cardCard">
                                     <div className="cardImage">
-                                        <img src={photo.img} alt=""/>
+                                        <img className="imgProducts" src={photo.img} alt=""/>
                                     </div>
                                     <div className="cardTitle">
-                                        <h3>{photo.title}</h3>
+                                        <h3 className="photoTitle">{photo.title}</h3>
                                     </div>
                                     <div className="cardButton">
-                                        <Button variant="light">{photo.currency + photo.cost}</Button>
+                                        <Button className="buttonCurrency" variant="light">{photo.currency + photo.cost}</Button>
                                     </div>
                                 </div>
                                 
