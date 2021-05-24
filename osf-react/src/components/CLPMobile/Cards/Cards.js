@@ -85,9 +85,7 @@ export class Cards extends Component {
                             </div>
                             <div className="btn">
                                 <button>
-                                    <a href="#">
-                                        {photo.currency + photo.cost}
-                                    </a>
+                                    {photo.currency + photo.cost}
                                 </button>
                             </div>   
                         </div> 

@@ -1,4 +1,6 @@
 import React from 'react';
+
+import {Link} from 'react-router-dom';
 import { Navbar,Nav,NavDropdown, Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavbarMenu.scss';
@@ -17,7 +19,7 @@ function NavbarMenu() {
                 </Navbar.Toggle>
 
                 <Navbar.Brand href="#home" className="logo">
-                    <img className="logoImg" src={logo} alt="Logo" />
+                    <Link to="/CategoryLanding"><img href='D:\GIT\project-osf\osf-react\src\CategoryLandingPage.js' className="logoImg" src={logo} alt="Logo" /></Link>
                 </Navbar.Brand>
                 
                 <Navbar.Collapse id="basic-navbar-nav">{/* Dropdown when press on Hamburger Menu */}

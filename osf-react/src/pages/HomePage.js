@@ -1,14 +1,14 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import NavbarMenu from './components/NavbarMenu/NavbarMenu.js';
-import Footer from './components/Footer/Footer.js';
-import Pagesfooter from './components/PagesFooter/PagesFooter.js';
-import Slider from './components/Main/Slider/Slider.js';
+import NavbarMenu from '../components/NavbarMenu/NavbarMenu.js';
+import Footer from '../components/Footer/Footer.js';
+import Pagesfooter from '../components/PagesFooter/PagesFooter.js';
+import Slider from '../components/Main/Slider/Slider.js';
 // import Sales from './components/Main/Sales/Sales.js';
-import Services from './components/Main/Services/Services.js';
-import Banner from './components/Main/Banner/Banner.js';
-import Products from './components/Main/Products/Products.js';
-import Cookies from './components/Cookies/Cookies.js';
+import Services from '../components/Main/Services/Services.js';
+import Banner from '../components/Main/Banner/Banner.js';
+import Products from '../components/Main/Products/Products.js';
+import Cookies from '../components/Cookies/Cookies.js';
 // import LatestPosts from './components/Main/LatestPosts/LatestPosts.js';
 
 import './HomePage.css';
