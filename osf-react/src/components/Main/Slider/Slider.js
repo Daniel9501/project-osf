@@ -1,5 +1,5 @@
 import React from 'react';
-import { Carousel, Button } from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './Slider.css';
@@ -24,7 +24,9 @@ function Slider() {
                         <h4 className="title">Control and manage any device with cloud solutions</h4>
                         <p className="content">Improve business performance and the user experience with the right mix of IoT technology and processes<br />
 doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed</p>
-                        <Button href="#">VIEW MORE</Button>
+                        <div className="buttonView">
+                            <button className="viewMoreButton" href="#">VIEW MORE</button>
+                        </div>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -33,7 +35,9 @@ doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veri
                         <h4 className="title">Control and manage any device with cloud solutions</h4>
                         <p className="content">Improve business performance and the user experience with the right mix of IoT technology and processes<br />
 doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed</p>
-                        <Button href="#">VIEW MORE</Button>
+                        <div className="buttonView">
+                            <button className="viewMoreButton" href="#">VIEW MORE</button>
+                        </div>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -42,7 +46,9 @@ doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veri
                         <h4 className="title">Control and manage any device with cloud solutions</h4>
                         <p className="content">Improve business performance and the user experience with the right mix of IoT technology and processes<br />
 doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed</p>
-                        <Button href="#">VIEW MORE</Button>
+                        <div className="buttonView">
+                            <button className="viewMoreButton" href="#">VIEW MORE</button>
+                        </div>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -51,7 +57,9 @@ doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veri
                         <h4 className="title">Control and manage any device with cloud solutions</h4>
                         <p className="content">Improve business performance and the user experience with the right mix of IoT technology and processes<br />
 doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed</p>
-                        <Button href="#">VIEW MORE</Button>
+                        <div className="buttonView">
+                            <button className="viewMoreButton" href="#">VIEW MORE</button>
+                        </div>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

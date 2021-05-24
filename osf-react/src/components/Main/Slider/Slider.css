@@ -33,7 +33,7 @@
     margin-right: 9px;
     
   }
-.carousel-indicators .active{
+.carousel-indicators li.active{
     height: 9px;
     width: 9px;
     border-radius: 50%;
@@ -42,7 +42,9 @@
     opacity: unset;
     margin-left: 9px;
     margin-right: 9px;
-    bottom: 0;
+    margin: 0;
+    margin-top: 6px;
+    
     
 }
 
@@ -65,6 +67,8 @@
     text-align: left;
     line-height: 39px;
     padding-bottom: 43px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .carousel-caption .content{
@@ -77,40 +81,30 @@
     
 }
 
-.carousel-caption .btn{
-    background-color: rgba(255, 255, 255, 0);
-    border: 2px solid rgb(181, 184, 181);
-    border-radius: 25px;
-    width: 147px;
-    height: 36px;
-    margin: 0;
-    padding-top: 1px;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    
-}
-.carousel-caption .btn:hover{
-    background-color: rgba(255, 255, 255, 0);
-    border: 2px solid rgb(181, 184, 181);
-    border-radius: 25px;
-    width: 147px;
-    height: 36px;
-    padding: 0;
-    margin: 0;
-    
-}
-
-.btn.focus, .btn:focus{
-    box-shadow: none;
-}
-
-.btn-primary.focus, .btn-primary:focus{
-    box-shadow: none;
-    
-}
-
 .carousel-indicators .active{
     margin-bottom: -20px;
 }
 
+.btn-primary:not(:disabled):not(.disabled):active{
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus{
+    box-shadow: 0 0 0 .2rem rgba(38, 143, 255, 0);
+}
+
+.buttonView{
+    width: 100%;
+    margin-top: -15px;
+}
+
+.buttonView .viewMoreButton{
+    border: 2px solid rgb(138,139,142);
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    font-weight: 300;
+    padding: 5px 30px;
+}
