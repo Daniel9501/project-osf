@@ -13,7 +13,6 @@ function Footer() {
     const [buttonLogin, setButtonLogin] = useState(false);
     return(
         <Navbar expand="lg" id="navBarBottom">
-            <Login trigger={buttonLogin} setTrigger={setButtonLogin}></Login>
             <div className="flex1">
                 <div className="numberFooter">
                     <h1>0</h1>
@@ -24,6 +23,7 @@ function Footer() {
             </div>   
             <Image  className="imgFooter" src={Search} />
             <button className="buttonUser" onClick={() => setButtonLogin(true)}><Image  className="imgFooter" src={ProfileUser} /></button>
+            <Login trigger={buttonLogin} setTrigger={setButtonLogin}></Login>
             <Image  className="imgFooter" src={Heart} />
             <Image  className="imgFooter" src={BagForShopping} />
         </Navbar>
