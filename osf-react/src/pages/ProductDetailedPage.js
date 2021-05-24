@@ -3,22 +3,21 @@ import React from 'react';
 import NavbarMenu from '../components/NavbarMenu/NavbarMenu.js';
 import Footer from '../components/Footer/Footer.js';
 import Pagesfooter from '../components/PagesFooter/PagesFooter.js';
-import ClpBreadCrumb from '../components/CLPMobile/BreadCrumb/ClpBreadCrumb.js'
-import ClpServices from '../components/CLPMobile/Title/ClpServices.js'
-import Filter from '../components/CLPMobile/Filter/Filter.js'
+import Services from '../components/Main/Services/Services.js';
+import Popular from '../components/PDP/PopularItems/Popular.js';
+import Titlepdp from '../components/PDP/Titlepdp/Titlepdp.js';
+
 import './CategoryLandingPage.css';
-import Cards from '../components/CLPMobile/Cards/Cards.js';
-function CategoryLandingPage() {
+function ProductDetailedPage() {
   return (
     <div className="entirePage">
         <div className="navigationMenu">
             <NavbarMenu />
         </div>
         <div className="mainPage">
-            <ClpBreadCrumb />
-            <ClpServices />
-            <Filter />
-            <Cards />
+            <Titlepdp />
+            <Popular />
+            <Services />
             <Pagesfooter />
             <Footer /> 
         </div>
@@ -27,4 +26,4 @@ function CategoryLandingPage() {
   );
 }
 
-export default CategoryLandingPage;
+export default ProductDetailedPage;
