@@ -6,7 +6,8 @@
 
 .firstDiv{
     height: 516px;
-    padding: 84px 13px 22px 16px;
+    padding: 20px 13px 22px 16px;
+    background-color: white;
     /* overflow:hidden; */
 }
 
