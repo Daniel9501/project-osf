@@ -1,14 +1,19 @@
 import React from 'react';
 import { Navbar, Image} from 'react-bootstrap';
+import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../NavbarMenu/NavbarMenu.css';
 import Search from '../Img/search.png';
 import ProfileUser from '../Img/profileUser.png'; 
 import Heart from '../Img/Heart.png';
 import BagForShopping from '../Img/BagForShopping.png';
+import './Footer.css';
+import Login from '../Login/Login.js';
 function Footer() {
+    const [buttonLogin, setButtonLogin] = useState(false);
     return(
         <Navbar expand="lg" id="navBarBottom">
+            <Login trigger={buttonLogin} setTrigger={setButtonLogin}></Login>
             <div className="flex1">
                 <div className="numberFooter">
                     <h1>0</h1>
@@ -16,9 +21,9 @@ function Footer() {
                 <div className="numberFooter">
                     <h1>0</h1>
                 </div> 
-            </div>     
+            </div>   
             <Image  className="imgFooter" src={Search} />
-            <Image  className="imgFooter" src={ProfileUser} />
+            <button className="buttonUser" onClick={() => setButtonLogin(true)}><Image  className="imgFooter" src={ProfileUser} /></button>
             <Image  className="imgFooter" src={Heart} />
             <Image  className="imgFooter" src={BagForShopping} />
         </Navbar>
