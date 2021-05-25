@@ -6,6 +6,7 @@ import Pagesfooter from '../components/PagesFooter/PagesFooter.js';
 import Services from '../components/Main/Services/Services.js';
 import Popular from '../components/PDP/PopularItems/Popular.js';
 import Titlepdp from '../components/PDP/Titlepdp/Titlepdp.js';
+import Item from '../components/PDP/Item/Item.js';
 
 import './CategoryLandingPage.css';
 function ProductDetailedPage() {
@@ -16,6 +17,7 @@ function ProductDetailedPage() {
         </div>
         <div className="mainPage">
             <Titlepdp />
+            <Item />
             <Popular />
             <Services />
             <Pagesfooter />
