@@ -1,8 +1,7 @@
 .productsa{
     width: 100%;
     background-color: rgb(241,237,234);
-    border-top: 1px solid rgb(102,106,114);
-    border-bottom: 1px solid rgb(102,106,114);
+    border-bottom: 1px solid rgba(102, 106, 114, 0.111);
     align-items: center;
 }
 
