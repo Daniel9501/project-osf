@@ -1,0 +1,242 @@
+.app{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 80px;
+    background-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.details{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.details .big-img{
+    overflow: hidden;
+}
+.big-img img{
+    display: block;
+}
+.details .box{
+    margin: 10px 10px 10px 10px;
+    text-align: left;
+}
+.box .row{
+    margin-bottom: 15px;
+    padding: 0;
+}
+.box .row .itemPrice{
+    color: rgba(0, 0, 0, 0.912);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -1.3px;
+}
+.box .colors{
+    margin-bottom: 20px;
+    display: none;
+}
+.box .colors button{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #333;
+    outline: none;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.box .itemContent{
+    line-height: 1.8;
+    margin: 10px 0;
+}
+.thumb{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    cursor: pointer;
+    margin: 10px 0;
+    justify-content: center;
+}
+.thumb img{
+    width: 70px;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    margin-right: 5px;
+    opacity: 0.4;
+    border-radius: 5px;
+}
+.thumb img.active{
+    opacity: 1;
+    border: 2px solid var(--green);
+}
+.box .cart{
+    background:var(--green);
+    color: white;
+    border: 2px solid rgba(230, 213, 181, 0.638);
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 6px 30px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.box .readMore{
+    border: none;
+    outline: none;
+    background: none;
+    color: var(--green);
+    margin: 0;
+    padding: 0;
+    letter-spacing: .2px;
+    margin-bottom: 15px;
+}
+.bottomDiv{
+    margin-bottom: 20px;
+}
+.bottomDiv .styleButton{
+    border: none;
+    outline: none;
+    background: none;
+    filter: invert(100%) sepia(0%) saturate(7246%) hue-rotate(23deg) brightness(75%) contrast(80%);
+}
+.bottomDiv .styleButton img{
+    height: 15px;
+    margin-top: -4px;
+}
+.bottomDiv .shareButton{
+    padding-left: 0;
+    padding-right: 33px;
+}
+.bottomDiv .facebookButton{
+    padding-left: 0;
+    padding-right: 23px;
+}
+.bottomDiv .googleButton{
+    padding-left: 0;
+    padding-right: 23px;
+}
+.bottomDiv .twitterButton{
+    padding-left: 0;
+    padding-right: 23px;
+}
+.bottomDiv .pinterestButton{
+    padding-left: 0;
+    padding-right: 23px;
+}
+.selectComponentColor{
+    width: 100%;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgba(230, 213, 181, 0.638);
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: left;
+    overflow: hidden;
+}
+.customSelectDiv{
+    width: 50%;
+}
+
+.customSelectDiv .ui.selection.dropdown{
+    border: 2px solid rgba(230, 213, 181, 0.638);
+    border-radius: 25px;
+    box-shadow: none;
+    min-height: 1em;
+    padding: 7px 10px 7px 10px;
+}
+.customSelectDiv .ui.selection.dropdown:focus{
+    border: 2px solid rgba(230, 213, 181, 0.638);
+    border-radius: 25px;
+    box-shadow: none;
+    min-height: 1em;
+}
+
+
+.customSelectDiv .ui.selection.dropdown .menu{
+    border: 2px solid rgba(230, 213, 181, 0.638);
+    box-shadow: none;
+    max-height: none;
+}
+.customSelectDiv .ui.selection.active.dropdown:hover .menu{
+    border-color: rgba(230, 213, 181, 0.638);
+    box-shadow: none;
+}
+.customSelectDiv .ui.dropdown .menu > .item > .image, .ui.dropdown .menu > .item > img,
+.customSelectDiv .ui.dropdown > .text > .image, .ui.dropdown > .text > img{
+    vertical-align: middle;
+    max-height: 1.2rem;
+    height: 1.2rem;
+    margin-top: -12px;
+}
+
+.customSelectDiv .ui.selection.dropdown{
+    color: rgba(230, 213, 181, 0.638);
+    top: -12px;
+}
+
+.customSelectDiv .ui.selection.dropdown .menu > .item{
+    border: none;
+}
+
+.customSelectDiv .ui.selection.dropdown > .dropdown.icon{
+    margin-top: -2px;
+    top:0;
+}
+
+.customSelectDiv .text{
+    color: black;
+}
+
+.countDiv{
+    width: 25%;
+}
+
+.countDiv .buttonMinus{
+    background: none;
+    box-shadow: none;
+    width: 33.3%;
+    height: 30px;
+    border: 2px solid rgba(230, 213, 181, 0.638);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-right: none;
+    color: rgba(0, 0, 0, 0.487);
+    vertical-align: middle;
+}
+.countDiv .buttonMinus span{
+    color: darkgray;
+    font-weight: 700;
+}
+.countDiv .buttonNumber{
+    background: none;
+    box-shadow: none;
+    width: 33.3%;
+    height: 30px;
+    border: 2px solid rgba(230, 213, 181, 0.638);
+    border-right: none;
+    border-left: none;
+    vertical-align: middle;
+}
+.countDiv .buttonNumber span{
+    color: black;
+}
+.countDiv .buttonPlus{
+    background: none;
+    box-shadow: none;
+    width: 33.3%;
+    height: 30px;
+    border: 2px solid rgba(230, 213, 181, 0.638);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-left: none;
+    color: rgba(0, 0, 0, 0.487);
+    vertical-align: middle;
+}
+.countDiv .buttonPlus span{
+    color: darkgray;
+    font-weight: 700;
+}
