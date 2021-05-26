@@ -3,82 +3,83 @@
     height: 558px;
     margin: 0;
     padding: 0;
-    /* background-color: rgba(0, 0, 0, 0.111); */
+    background-color: rgba(0, 0, 0, 0.111);
 }
-
 .sales .image{
-    padding-top: 25px;
     height: 335px;
     overflow: hidden;
+    border-radius: 8px;
 }
-
-.sales .image img{
-    max-width: 100%;
+.sales .image .imageSales{
+    width: 100%;
     display: block;
-    border-radius: 4px;
+    
 }
-
-
 .sales .text{
     width: 100%;
-    margin-top: -266px;
+    margin-top:30px;
 }
-
-.text h1, h3, h4, h5{
+.text .textBig, .textTitle, .textText, .textDetails{
     text-align:center;
 }
-
-.text h1{
-    font-size: 74px;
-    font-weight: bolder;
+.sales .image .textBig{
+    position: absolute;
+    font-size: 7.5rem;
+    font-weight: 700;
     color: rgb(255, 255, 255);
-    margin-bottom: 74px;
+    margin-top: -330px;
+    margin-left: 45px;
+    letter-spacing: -10px;
 }
-.text h3{
-    font-size: 18px;
-    font-weight: 600;
-    color: white;
-    margin-bottom: 110px;
+.sales .image .textTitle{
+    position: absolute;
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: white;   
+    margin-top: -150px;
+    margin-left: 85px;
 }
+.text .textText{
 
-.text h4{
-    font-size: 14px;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: 300;
 }
-
-.text h5{
-    font-size: 11px;
+.text .textDetails{
+    font-size: 1rem;
+    margin-top: 5px;
 }
 .facebookButton{
     width: 100%;
-
+    padding-top: 24px;
+}
+.facebookButton .facebookText{
+    color: rgb(58,91,150);
+    font-size: 1.2rem;
 }
 .MuiButton-outlinedPrimary{
     color: rgb(58,91,150);
     border: 2px solid rgb(58,91,150);
     border-radius: 25px;
 }
-
-
 .MuiButton-root {
     border-radius: 25px !important;
     color: rgb(58,91,150) !important;
     border: 2px solid rgb(58,91,150) !important;
 }
-
 .MuiButton-label{
     font-size: 11px;
     font-weight: 500;
 }
-
 .MuiButton-label img{
-    height: 11px;
+    height: 20px;
     color: rgb(58,91,150);
     filter: invert(33%) sepia(8%) saturate(4055%) hue-rotate(180deg) brightness(98%) contrast(88%);
     margin-right: 21px;
 }
-
 .MuiButtonBase-root.MuiButton-root.MuiButton-outlined.MuiButton-outlinedPrimary{
-    padding: 11px 22px 11px 22px;
+    padding: 5px 30px 3px 30px;
     width: 151px;
     margin-left: 59px;
     margin-right: auto;
