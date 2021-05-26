@@ -1,7 +1,10 @@
 import React from 'react';
 import { Accordion, Card, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../NavbarMenu/NavbarMenu.css';
+
 import Facebook from '../Img/Socialicons/f.png';
 import Google from '../Img/Socialicons/g.png';
 import Twitter from '../Img/Socialicons/t.png';
@@ -71,10 +74,10 @@ function Pagesfooter() {
                 </Card>
             </Accordion>
             <div className="socialIcons">
-                <img className="facebook" src={Facebook} alt="Facebook" />
-                <img className="google dist" src={Google} alt="Google" />
-                <img className="twitter dist" src={Twitter} alt="Twitter" />
-                <img className="pinterest dist" src={Pinterest} alt="Pinterest" />
+                <Link to={{ pathname: "https://facebook.com" }} target="_blank"><img className="facebook" src={Facebook} alt="Facebook" /></Link>
+                <Link to={{ pathname: "https://www.google.com" }} target="_blank"><img className="google dist" src={Google} alt="Google" /></Link>
+                <Link to={{ pathname: "https://twitter.com" }} target="_blank"><img className="twitter dist" src={Twitter} alt="Twitter" /></Link>
+                <Link to={{ pathname: "https://www.pinterest.com" }} target="_blank"><img className="pinterest dist" src={Pinterest} alt="Pinterest" /></Link>
             </div>
         </div>
     );
