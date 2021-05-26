@@ -3,9 +3,9 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import { Navbar,Nav,NavDropdown, Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './NavbarMenu.scss';
 import './NavbarMenu.css';
 import Hamburger from '../../../node_modules/hamburger-react';
+
 import logo from '../Img/logo.webp';
 import NavImage from '../Img/dropdown-img.webp';
 
