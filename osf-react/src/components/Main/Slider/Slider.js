@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import {Link} from 'react-router-dom';
 import './Slider.css';
 import Img1 from '../../Img/Main/firstImage1.webp';
 import Img2 from '../../Img/Main/firstImage2.webp';
@@ -25,7 +25,7 @@ function Slider() {
                         <p className="content">Improve business performance and the user experience with the right mix of IoT technology and processes<br />
 doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed</p>
                         <div className="buttonView">
-                            <button className="viewMoreButton" href="#">VIEW MORE</button>
+                            <Link to='/CategoryLanding'><button className="viewMoreButton" href="#">VIEW MORE</button></Link>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -36,7 +36,7 @@ doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veri
                         <p className="content">Improve business performance and the user experience with the right mix of IoT technology and processes<br />
 doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed</p>
                         <div className="buttonView">
-                            <button className="viewMoreButton" href="#">VIEW MORE</button>
+                            <Link to='/CategoryLanding'><button className="viewMoreButton" href="#">VIEW MORE</button></Link>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -47,7 +47,7 @@ doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veri
                         <p className="content">Improve business performance and the user experience with the right mix of IoT technology and processes<br />
 doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed</p>
                         <div className="buttonView">
-                            <button className="viewMoreButton" href="#">VIEW MORE</button>
+                            <Link to='/CategoryLanding'><button className="viewMoreButton" href="#">VIEW MORE</button></Link>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -58,7 +58,7 @@ doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veri
                         <p className="content">Improve business performance and the user experience with the right mix of IoT technology and processes<br />
 doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed</p>
                         <div className="buttonView">
-                            <button className="viewMoreButton" href="#">VIEW MORE</button>
+                            <Link to='/CategoryLanding'><button className="viewMoreButton" href="#">VIEW MORE</button></Link>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
