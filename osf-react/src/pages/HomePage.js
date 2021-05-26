@@ -20,7 +20,7 @@ function HomePage() {
   useEffect(() => {
     setTimeout(() => {
       setTimedCookies(true)
-    }, 5000);
+    }, 10000);
   },[]);
 
   return (
