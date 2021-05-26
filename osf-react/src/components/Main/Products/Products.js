@@ -114,6 +114,8 @@ class Products extends Component{
                                         <div className="overlayCardImage">
                                             <img className="imgProducts" src={photo.img} alt=""/>       
                                         </div>
+
+                                        
                                     </div>
                                     <div className="imagePlusHeart">
                                         <Link to='/ShoppingCart'><img className="plusImage" src={Plus} alt="Plus"></img></Link>
@@ -134,6 +136,7 @@ class Products extends Component{
                                         }
                                     </div>
                                 </div>
+                                
                             )
                         })}
                     </Slider>
