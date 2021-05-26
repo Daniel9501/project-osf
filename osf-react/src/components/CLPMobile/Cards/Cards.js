@@ -11,8 +11,10 @@ import Plus from '../../Img/Plus.webp';
 import Heart from '../../Img/Heart.webp';
 
 import './Cards.css';
+
 const photos = [
     {
+        id: 'photo1',
         name: 'Photo 1',
         img: Card1,
         title: "Kristina Dam Oak Table With White Marble Top",
@@ -21,6 +23,7 @@ const photos = [
         buy: "BUY NOW"
     },
     {
+        id: 'photo2',
         name: 'Photo 2',
         img: Card2,
         title: "Hay - About A Lounge Chair AAL 93",
@@ -29,6 +32,7 @@ const photos = [
         buy: "BUY NOW"
     },
     {
+        id: 'photo3',
         name: 'Photo 3',
         img: Card3,
         title: "Activate Facial Mask and Charcoal Soap",
@@ -37,6 +41,7 @@ const photos = [
         buy: "BUY NOW"
     },
     {
+        id: 'photo4',
         name: 'Photo 4',
         img: Card4,
         title: "Cocktail Table Walnut | YES",
@@ -45,6 +50,7 @@ const photos = [
         buy: "BUY NOW"
     },
     {
+        id: 'photo5',
         name: 'Photo 5',
         img: Card5,
         title: "Hay - About A Lounge Chair AAL 93",
@@ -53,6 +59,7 @@ const photos = [
         buy: "BUY NOW"
     },
     {
+        id: 'photo6',
         name: 'Photo 6',
         img: Card6,
         title: "TORY DESK CALENDAR",
@@ -61,6 +68,7 @@ const photos = [
         buy: "BUY NOW"
     },
     {
+        id: 'photo7',
         name: 'Photo 7',
         img: Card7,
         title: "CH445 Wing Chair on SUITE NY",
@@ -76,9 +84,11 @@ export class Cards extends Component {
             show:false
         }
     }
-    operation(){
+    operation(id){
         this.setState({
-            show:true
+            show:true,
+            id:id
+            
         })
     }
     render() {
@@ -103,15 +113,17 @@ export class Cards extends Component {
                                 </div>
                             </div>
                             <div className="btn">
-                                <button className="currencyCostBtn" onClick={() => this.operation()}>{photo.currency + photo.cost}</button>
+                                <button className="currencyCostBtn" key={photo.id} onClick={() => this.operation(photo.id)}>{photo.currency + photo.cost}</button>
                                 { 
-                                    this.state.show?
+                                    this.state.show && this.state.id===photo.id?
                                         <div className="hideCardButton">
-                                            <Link to='/ProductDetailed'><button className="hideButtonCurrency" onClick={() => this.operation()}>{photo.currency + photo.cost}</button></Link>
+                                            <Link to='/ProductDetailed'><button className="hideButtonCurrency" >{photo.currency + photo.cost}</button></Link>
                                             <Link to='/ShoppingCart'><button className="hideButtonBuyNow">BUY NOW</button></Link>
                                         </div>
+                                        
                                      :null
-                                } 
+                                }
+                                
                             </div>   
                         </div> 
                     )
