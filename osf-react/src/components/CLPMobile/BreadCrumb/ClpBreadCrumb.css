@@ -1,5 +1,5 @@
-.clpBread{
-    width: 50%;
+.clpBreada{
+    width: 40%;
     display: flex;
     justify-content: space-between;
     margin-left: auto;
@@ -8,12 +8,12 @@
     margin-top: 20px;
 }
 
-.clpBread a{
+.clpBreada .clpa{
     text-decoration: none;
     color: black;
 }
 
 
-.clpBread a .homeCrumb{
+.clpBreada a .homeCrumb{
     color: rgb(132,188,34);
 }

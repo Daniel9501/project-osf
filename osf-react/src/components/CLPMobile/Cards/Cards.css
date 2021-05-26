@@ -24,11 +24,13 @@
     width: 100%;
 }
 
-.card-body h3{
+.card-body .photoTitleH{
     padding: 0;
     margin: 0;
     font-size: 1.3376rem;
-    letter-spacing: -.5px;
+    letter-spacing: 0.3px;
+    color: rgba(0, 0, 0, 0.871);
+    font-weight: 500;
 }
 
 .card-body{
@@ -43,23 +45,13 @@
 
 }
 
-.btn button{
+.btn .currencyCostBtn{
     background-color: rgba(210, 180, 140, 0);
     border: none;
-}
-
-.btn button a{
-    text-decoration: none;
-    color: rgb(193,199,203);
-    font-size: 1.1704rem;
-    font-weight: 500;
-    transition: .2s;
-}
-
-.btn button a:hover{
-    text-decoration: none;
-    color: rgba(0, 128, 128, 0);
-    
+    outline: none;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: rgb(178,178,178);
 }
 
 .container .loadMore{

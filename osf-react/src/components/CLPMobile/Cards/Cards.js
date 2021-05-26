@@ -80,11 +80,11 @@ export class Cards extends Component {
                             </div>
                             <div className="card-content">
                                 <div className="card-body">
-                                    <h3>{photo.title}</h3>
+                                    <h3 className="photoTitleH">{photo.title}</h3>
                                 </div>
                             </div>
                             <div className="btn">
-                                <button>
+                                <button className="currencyCostBtn">
                                     {photo.currency + photo.cost}
                                 </button>
                             </div>   
