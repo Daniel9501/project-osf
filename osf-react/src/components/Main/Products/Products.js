@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import '../../../../node_modules/slick-carousel/slick/slick.css';
 import '../../../../node_modules/slick-carousel/slick/slick-theme.css';
 import './Products.css';
+import { Link } from 'react-router-dom';
 import Slider from '../../../../node_modules/react-slick';
 import Card1 from '../../Img/Main/Products/card1.webp';
 import Card2 from '../../Img/Main/Products/card2.webp';
@@ -10,9 +11,10 @@ import Card4 from '../../Img/Main/Products/card4.webp';
 import Card5 from '../../Img/Main/Products/card5.webp';
 import Card6 from '../../Img/Main/Products/card6.webp';
 import Card7 from '../../Img/Main/Products/card7.webp';
-// import Green from '../../Img/Main/Products/greenhover.png'
-// import Card8 from '../../Img/Main/Products/card8.webp';
 import Button from '../../../../node_modules/react-bootstrap/Button';
+import Plus from '../../Img/Plus.webp';
+import Heart from '../../Img/Heart.webp';
+
 
 const photos = [
     {
@@ -67,6 +69,17 @@ const photos = [
 ]
 
 class Products extends Component{
+    constructor(){
+        super()
+        this.state={
+            show:false
+        }
+    }
+    operation(){
+        this.setState({
+            show:true
+        })
+    }
     render(){
         const settings ={
             dots: true,
@@ -98,20 +111,35 @@ class Products extends Component{
                             return(
                                 <div className="cardCard">
                                     <div className="cardImage">
-                                        <img className="imgProducts" src={photo.img} alt=""/>
+                                        <div className="overlayCardImage">
+                                            <img className="imgProducts" src={photo.img} alt=""/>       
+                                        </div>
+
+                                        
+                                    </div>
+                                    <div className="imagePlusHeart">
+                                        <Link to='/ShoppingCart'><img className="plusImage" src={Plus} alt="Plus"></img></Link>
+                                        <Link to='/ProductDetailed'><img className="heartImage" src={Heart} alt="Heart"></img></Link>
                                     </div>
                                     <div className="cardTitle">
                                         <h3 className="photoTitle">{photo.title}</h3>
                                     </div>
                                     <div className="cardButton">
-                                        <Button className="buttonCurrency" variant="light">{photo.currency + photo.cost}</Button>
+                                        <Button className="buttonCurrency" variant="light" onClick={() => this.operation()}>{photo.currency + photo.cost}</Button>
+                                        { 
+                                            this.state.show?
+                                                <div className="hideCardButton">
+                                                    <Link to='/ProductDetailed'><button className="hideButtonCurrency" onClick={() => this.operation()}>{photo.currency + photo.cost}</button></Link>
+                                                    <Link to='/ShoppingCart'><button className="hideButtonBuyNow">BUY NOW</button></Link>
+                                                </div>
+                                            :null
+                                        }
                                     </div>
                                 </div>
                                 
                             )
                         })}
                     </Slider>
-                    {/* <img className="imgHover" src={Green} alt="green hover" /> */}
                 </div>
                 <div className="oooo">
 

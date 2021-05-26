@@ -12,24 +12,92 @@
     margin: 25px 14px 7px 16px;
     background-color: rgb(38,42,50);
 } 
-
+.card:hover .imgProducts{
+    opacity: 0.1;
+    background-color: black;
+}
+.card:hover .overlayCardImage{
+    opacity: 1;
+}
 .cardCard{
     height:365px;
     width: 100%;
     border-radius: 10px;
 }
-
-.cardImage{
+.cardCard .cardImage .overlayCardImage{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(50,199,119);
+    opacity: 1;
+    transition: .5s ease;
+    border-top-left-radius: 8px ;
+    border-top-right-radius: 8px;
+}
+.cardCard .cardImage{
     height:260px;
     overflow: hidden;
+    opacity: 1;
 }
+.card .cardCard .imagePlusHeart{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    margin-top: -55%;
+    margin-left: 13%;
+    opacity: 0;
+    transition: .5s ease;
+}
+.card:hover .cardCard .imagePlusHeart{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    margin-top: -55%;
+    margin-left: 13%;
+    opacity: 1;
+    transition: .5s ease;
+}
+.card .cardCard .imagePlusHeart .plusImage{
+    margin: 20px;
+}
+.card .cardCard .imagePlusHeart .heartImage{
+    margin: 20px;
+}
+
+.cardButton .hideCardButton{
+    display: flex;
+    justify-content: center;
+    margin-top: -52px;
+}
+.cardButton .hideCardButton .hideButtonCurrency{
+    color: var(--green);
+    background-color: white;
+    border: 2px solid rgb(229,229,229);
+    border-right: none;
+    padding: 5px 15px 3px 15px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    font-size: 1.2rem;
+}
+
+.cardButton .hideCardButton .hideButtonBuyNow{
+    font-size: 1.2rem;
+    background-color: white;
+    border: 2px solid rgb(229,229,229);
+    padding: 5px 15px 3px 15px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
 .cardImage .imgProducts{
     width: 100%;
     height: 100%;
     border-top-left-radius: 8px ;
     border-top-right-radius: 8px;
+    transition: .5s ease;
 }
+
 .cardTitle{
+    margin-top: 15px;
     width: 221px;
     margin-left: auto;
     margin-right: auto;
@@ -46,6 +114,8 @@
 }
 .cardButton{
     align-items: center;
+    margin-top: 15px;
+
 }
 
 .cardButton .buttonCurrency{
@@ -54,6 +124,7 @@
     border: none;
     width: 100%;
     font-weight: 600;
+    padding-bottom: 25px;
 }
 .products .card{
     /* overflow: hidden; */
