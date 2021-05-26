@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 import Card1 from '../../Img/Main/Products/card1.webp';
 import Card2 from '../../Img/Main/Products/card2.webp';
 import Card3 from '../../Img/Main/Products/card3.webp';
@@ -6,6 +7,8 @@ import Card4 from '../../Img/Main/Products/card4.webp';
 import Card5 from '../../Img/Main/Products/card5.webp';
 import Card6 from '../../Img/Main/Products/card6.webp';
 import Card7 from '../../Img/Main/Products/card7.webp';
+import Plus from '../../Img/Plus.webp';
+import Heart from '../../Img/Heart.webp';
 
 import './Cards.css';
 const photos = [
@@ -66,27 +69,49 @@ const photos = [
         buy: "BUY NOW"
     }
 ]
-console.log(photos);
 export class Cards extends Component {
+    constructor(){
+        super()
+        this.state={
+            show:false
+        }
+    }
+    operation(){
+        this.setState({
+            show:true
+        })
+    }
     render() {
         return (
             <div className="container">
                 {photos.map((photo) => {
                     return(
                         <div className="card-container">
-
                             <div className="img-container">
-                                <img src={photo.img} alt=""/>
+                                <div className="overlayCardImage">
+                                    <img className="imgContainerCards" src={photo.img} alt=""/>
+                                    <div className="imagePlusHeart">
+                                        <Link to='/ShoppingCart'><img className="plusImage" src={Plus} alt="Plus"></img></Link>
+                                        <Link to='/ProductDetailed'><img className="heartImage" src={Heart} alt="Heart"></img></Link>
+                                    </div>
+                                </div>
                             </div>
+                            
                             <div className="card-content">
                                 <div className="card-body">
                                     <h3 className="photoTitleH">{photo.title}</h3>
                                 </div>
                             </div>
                             <div className="btn">
-                                <button className="currencyCostBtn">
-                                    {photo.currency + photo.cost}
-                                </button>
+                                <button className="currencyCostBtn" onClick={() => this.operation()}>{photo.currency + photo.cost}</button>
+                                { 
+                                    this.state.show?
+                                        <div className="hideCardButton">
+                                            <Link to='/ProductDetailed'><button className="hideButtonCurrency" onClick={() => this.operation()}>{photo.currency + photo.cost}</button></Link>
+                                            <Link to='/ShoppingCart'><button className="hideButtonBuyNow">BUY NOW</button></Link>
+                                        </div>
+                                     :null
+                                } 
                             </div>   
                         </div> 
                     )
