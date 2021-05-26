@@ -19,7 +19,7 @@ function NavbarMenu() {
                 </Navbar.Toggle>
 
                 <Navbar.Brand href="#home" className="logo">
-                    <Link to="/CategoryLanding"><img href='D:\GIT\project-osf\osf-react\src\CategoryLandingPage.js' className="logoImg" src={logo} alt="Logo" /></Link>
+                    <Link to="/CategoryLanding"><img className="logoImg" src={logo} alt="Logo" /></Link>
                 </Navbar.Brand>
                 
                 <Navbar.Collapse id="basic-navbar-nav">{/* Dropdown when press on Hamburger Menu */}
