@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage.js';
 import NotFoundPage from './pages/NotFound.js';
 import CategoryLandingPage from './pages/CategoryLandingPage.js';
 import ProductDetailedPage from './pages/ProductDetailedPage.js';
+import ShoppingCart from './pages/ShoppingCart.js';
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                 <Route exact path="/404" component={NotFoundPage} />
                 <Route exact path="/CategoryLanding" component={CategoryLandingPage} />
                 <Route exact path="/ProductDetailed" component={ProductDetailedPage} />
+                <Route exact path="/ShoppingCart" component={ShoppingCart} />
                 <Redirect to="/404" />
             </Switch>
         </Router>
