@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Image} from 'react-bootstrap';
 import { useState } from 'react';
+import {Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Search from '../Img/search.png';
 import ProfileUser from '../Img/profileUser.png'; 
@@ -25,7 +26,7 @@ function Footer() {
             <button className="buttonUser" onClick={() => setButtonLogin(true)}><Image  className="imgFooter" src={ProfileUser} /></button>
             <Login trigger={buttonLogin} setTrigger={setButtonLogin}></Login>
             <Image  className="imgFooter" src={Heart} />
-            <Image  className="imgFooter" src={BagForShopping} />
+            <Link to="/ShoppingCart"><Image  className="imgFooter" src={BagForShopping} /></Link>
         </Navbar>
     );
 }
