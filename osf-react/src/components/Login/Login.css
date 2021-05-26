@@ -35,21 +35,20 @@
     border-radius: 25px;
     text-align: center;
 }
-
 h4{
     color: white;
     font-size: .8rem;
     font-weight: 300;
     padding: 5px 30px 0 30px;
 }
-form{
+form {
     width: 90%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-form h6{
+form h6 {
     color: black;
     text-align: left;
     font-size: .9rem;
@@ -64,6 +63,10 @@ form h6{
      width: 100%;
      border: 2px solid rgb(215,215,215);
      border-radius: 25px;
+ }
+
+ form input:focus{
+     outline: none;
  }
 
  .login p{
