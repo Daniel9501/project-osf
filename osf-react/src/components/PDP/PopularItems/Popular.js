@@ -12,7 +12,7 @@ import Card6 from '../../Img/Main/Products/card6.webp';
 import Card7 from '../../Img/Main/Products/card7.webp';
 import Button from '../../../../node_modules/react-bootstrap/Button';
 
-const photos = [
+const products = [
     {
         name: 'Photo 1',
         img: Card1,
@@ -92,17 +92,17 @@ class Popular extends Component {
                 <div className="carda">
 
                     <Slider {...settings}>
-                        {photos.map((photo) => {
+                        {products.map((product) => {
                             return (
                                 <div className="cardCarda">
                                     <div className="cardImagea">
-                                        <img className="imgProductsa" src={photo.img} alt="" />
+                                        <img className="imgProductsa" src={product.img} alt="" />
                                     </div>
                                     <div className="cardTitlea">
-                                        <h3 className="photoTitlea">{photo.title}</h3>
+                                        <h3 className="photoTitlea">{product.title}</h3>
                                     </div>
                                     <div className="cardButtona">
-                                        <Button className="buttonCurrencya" variant="light">{photo.currency + photo.cost}</Button>
+                                        <Button className="buttonCurrencya" variant="light">{product.currency + product.cost}</Button>
                                     </div>
                                 </div>
                             )
