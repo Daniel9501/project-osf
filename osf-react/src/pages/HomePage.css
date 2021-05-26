@@ -1,6 +1,32 @@
-.entirePage{
+.entirePageMobile{
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
+}
+.entirePageDesktop{
+    display: none;
+}
+@media only screen and (min-width: 900px) {
+    .entirePageMobile {
+      display: none;
+    }
+    .entirePageDesktop{
+        display: inherit;
+    }
+    .entirePageDesktop .secondRow{
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 55px;
+        padding-right: 55px;
+        padding-top: 106px;
+    }
+    .entirePageDesktop .firstRow{
+        position: fixed;
+        background-color: rgba(222, 184, 135, 0.57);
+        width: 100%;
+        height: 80px;
+        font-size: 5rem;
+        border-bottom: 2px solid black;
+    }
 }
