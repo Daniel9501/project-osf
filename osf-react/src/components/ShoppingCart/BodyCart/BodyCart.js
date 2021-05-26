@@ -12,7 +12,7 @@ function BodyCart() {
                     <div className="titlep">Kristina Dam Oak Table With White Marble Top</div>
                     <div className="pricep">$2,195.00</div>
                     <div className="image">
-                        <img src={image} alt="" />
+                        <img className="productImage" src={image} alt="" />
                     </div>
                     <div className="increase">
                         <button className="minus">-</button>
@@ -23,15 +23,16 @@ function BodyCart() {
                             $2,195
                     </div>
                     <button className="deleteButton">
-                            <img src={image2} alt="" />
+                            <img className="cancelImage" src={image2} alt="" />
                     </button>
-                </div><br />
+                </div>
+                <br />
                 <div className="details">
                     
                     <div className="titlep">Kristina Dam Oak Table With White Marble Top</div>
                     <div className="pricep">$2,195.00</div>
                     <div className="image">
-                        <img src={image} alt="" />
+                        <img className="productImage" src={image} alt="" />
                     </div>
                     <div className="increase">
                         <button className="minus">-</button>
@@ -42,7 +43,7 @@ function BodyCart() {
                             $2,195
                     </div>
                     <button className="deleteButton">
-                            <img src={image2} alt="" />
+                            <img className="cancelImage" src={image2} alt="" />
                     </button>
                 </div>
                 

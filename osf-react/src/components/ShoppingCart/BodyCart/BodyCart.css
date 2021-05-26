@@ -21,6 +21,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    text-align: center;
     border-bottom: 2px solid rgb(232,226,214);
     padding-top: 28px;
 }
@@ -31,7 +32,7 @@
     width: 250px;
     overflow: hidden;
 }
-.details .image img{
+.details .image .productImage{
     width: 100%;
 }
 .details .titlep{
@@ -55,12 +56,14 @@
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     padding: 4px 25px 4px 25px;
+    background: none;
 }
 .details .increase .number{
     border: 2px solid rgb(232,226,214);
     border-right: none;
     border-left: none;
     padding: 4px 25px 4px 25px;
+    background: none;
 }
 .details .increase .plus{
     border: 2px solid rgb(232,226,214);
@@ -68,6 +71,7 @@
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     padding: 4px 25px 4px 25px;
+    background: none;
 }
 .details .lastDiva{
     width: 100%;
@@ -82,12 +86,12 @@
     width: 10%;
     padding: 0;
     position: absolute;
-    margin-right: -94%;
-    margin-top: -13%;
+    margin-right: -80%;
+    margin-top: -10%;
     overflow: hide;
 }
 
-.details .lastDiva button img{
+.details .lastDiva button .cancelImage{
     height: 30px;
 }
 
@@ -165,4 +169,5 @@
 .couponCode .sampleTextBoldSize{
     font-size: 2.5rem;
     color: rgba(0, 0, 0, 0.8);
+    margin-right: 45px;
 }
