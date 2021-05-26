@@ -5,8 +5,8 @@ import './Titlepdp.css';
 
 function Titlepdp() {
     return (
-        <div className="pdpBread">
-            <div className="breadCrumbPdp">
+        <div className="pdpBreadTitle">
+            <div className="breadCrumbPdpab">
                 <Link to="/Home"><span className="homeCrumb">Home</span></Link>
                 <p className="slasha">/</p>
                 <Link to="/Home"><span className="homeCrumb">OSF Theme</span></Link>

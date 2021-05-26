@@ -1,10 +1,10 @@
-.pdpBread{
+.pdpBreadTitle{
     font-size: .9rem;
     margin-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
 }
-.pdpBread .breadCrumbPdp{
+.pdpBreadTitle .breadCrumbPdpab{
     width: 80%;
     display: flex;
     flex-wrap: wrap;
@@ -12,33 +12,27 @@
     margin-left: auto;
     margin-right: auto;
 }
-.pdpBread .breadCrumbPdp a{
+.pdpBreadTitle .breadCrumbPdpab a{
     text-decoration: none;
     color: rgb(0, 0, 0);
     width: auto;
 }
-
-
-.pdpBread .breadCrumbPdp a .homeCrumb{
+.pdpBreadTitle .breadCrumbPdpab a .homeCrumb{
     color: rgb(132,188,34);
 }
-
-.breadCrumbPdp .slasha{
+.breadCrumbPdpab .slasha{
     margin: 0;
     color: rgb(192,198,201);
 }
-
-.breadCrumbPdp .linkto{
+.breadCrumbPdpab .linkto{
     margin-left: auto;
     margin-right: auto;
 }
-
-.pdpBread  .titlea{
+.pdpBreadTitle  .titlea{
     width: 100%;
     margin-top: 30px;
 }
-
-.pdpBread .titlea .lineProductsa{
+.pdpBreadTitle .titlea .lineProductsa{
     padding: 0;
     margin:0;
     line-height: normal;
@@ -48,12 +42,10 @@
     z-index: 999;
     width: 100%;
 }
-
-.pdpBread .titlea .lineProductsa .popularItemsa{
+.pdpBreadTitle .titlea .lineProductsa .popularItemsa{
     font-size: 1.8rem;
     color: rgba(0, 0, 0, 0.782);
 }
-
 .titlea .lineProductsa::before{
     content: "";
     display: block;
