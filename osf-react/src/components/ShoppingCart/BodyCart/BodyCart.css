@@ -1,0 +1,168 @@
+.bodyPage{
+    width: 100%;
+}
+.firstBody{
+    margin-bottom: 2px;
+    background-color: white;
+    padding: 20px 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.secondBody{
+    background-color: white;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 50px;
+}
+
+.firstBody .details{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid rgb(232,226,214);
+    padding-top: 28px;
+}
+
+.details .image{
+    margin-top: 20px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+.details .image img{
+    width: 100%;
+}
+.details .titlep{
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.details .pricep{
+    width: 100%;
+    font-size: .9rem;
+    color: gray;
+    margin-top: 10px;
+}
+.details .increase{
+    width: 100%;
+    margin-top: 20px;
+}
+.details .increase .minus{
+    border: 2px solid rgb(232,226,214);
+    border-right: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 4px 25px 4px 25px;
+}
+.details .increase .number{
+    border: 2px solid rgb(232,226,214);
+    border-right: none;
+    border-left: none;
+    padding: 4px 25px 4px 25px;
+}
+.details .increase .plus{
+    border: 2px solid rgb(232,226,214);
+    border-left: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 4px 25px 4px 25px;
+}
+.details .lastDiva{
+    width: 100%;
+    font-weight: 900;
+    font-size: 2.2rem;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.details .deleteButton{
+    background: none;
+    border: none;
+    width: 10%;
+    padding: 0;
+    position: absolute;
+    margin-right: -94%;
+    margin-top: -13%;
+    overflow: hide;
+}
+
+.details .lastDiva button img{
+    height: 30px;
+}
+
+.lastDiva .priceTotal{
+    width: 40%;
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin-top: 18px;
+}
+
+.secondBody .shopping ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.secondBody .couponCode{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.secondBody .couponCodeMargin{
+    margin-top: 20px;
+}
+.couponCode .couponButton{
+    border: 2px solid rgb(232,226,214);
+    border-radius: 25px;
+    padding: 5px 20px 5px 15px;
+    font-size: .8rem;
+}
+.couponCode .applyButton{
+    border: 2px solid var(--green);
+    border-radius: 25px;
+    padding: 4px 20px 4px 15px;
+    font-size: .9rem;
+    background: none;
+    color: var(--green);
+}
+.couponCode .applyButtona{
+    border: 2px solid var(--green);
+    border-radius: 25px;
+    padding: 5px 10px 5px 10px;
+    font-size: .9rem;
+    background: none;
+    color: var(--green);
+}
+.couponCode .applyButtonab{
+    border: 2px solid var(--green);
+    border-radius: 25px;
+    padding: 5px 10px 5px 10px;
+    font-size: .9rem;
+    background: var(--green);
+    color: white;
+}
+.couponCode .sampleText{
+    color: rgba(0, 0, 0, 0.548);
+    font-weight: 300;
+    font-size: .9rem;
+    letter-spacing: .8px;
+}
+.couponCode .sampleTextBold{
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 900;
+    font-size: .9rem;
+    letter-spacing: .8px;
+}
+.couponCode ul{
+    list-style: none;
+    margin-right: 20px;
+}
+.couponCode ul li input{
+    margin-right: 10px;
+}
+.couponCode .sampleTextBoldSize{
+    font-size: 2.5rem;
+    color: rgba(0, 0, 0, 0.8);
+}
