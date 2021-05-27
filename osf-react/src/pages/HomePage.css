@@ -14,13 +14,6 @@
     .entirePageDesktop{
         display: inherit;
     }
-    .entirePageDesktop .secondRow{
-        display: flex;
-        padding-left: 55px;
-        padding-right: 55px;
-        padding-top: 106px;
-        z-index: 29;
-    }
     .entirePageDesktop .firstRow{
         position: fixed;
         background-color: rgba(222, 184, 135, 0.57);
@@ -28,6 +21,19 @@
         height: 80px;
         border-bottom: 2px solid rgb(243,240,234);
         z-index:30;
+    }
+    .entirePageDesktop .secondRow{
+        display: flex;
+        padding-left: 55px;
+        padding-right: 55px;
+        padding-top: 106px;
+        z-index: 29;
+    }
+    .entirePageDesktop .thirdRow{
+        background-color: rgb(38,42,50);
+        margin-top: 53px;
+        padding-left: 56px;
+        padding-right: 56px;
     }
 }
 

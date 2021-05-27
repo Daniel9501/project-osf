@@ -9,6 +9,7 @@ import Card6 from '../../Img/Main/Products/card6.webp';
 import Card7 from '../../Img/Main/Products/card7.webp';
 import Plus from '../../Img/Plus.webp';
 import Heart from '../../Img/Heart.webp';
+import Load from '../../Img/Desktop/Cards/load.webp';
 
 import './Cards.css';
 
@@ -84,6 +85,15 @@ const photos = [
         currency: "$",
         cost: " 330.55",
         buy: "BUY NOW"
+    },    
+    {
+        id: 'photo9',
+        name: 'Photo 9',
+        img: Card3,
+        title: "Activate Facial Mask and Charcoal Soap",
+        currency: "$",
+        cost: " 129.55",
+        buy: "BUY NOW"
     }
 ]
 export class Cards extends Component {
@@ -103,6 +113,13 @@ export class Cards extends Component {
     render() {
         return (
             <div className="container">
+                <div className="titlea">
+                    <h4 className="lineProductsa">
+                        <span className="popularItemsa">
+                            Popular Items
+                        </span>
+                    </h4>
+                </div>
                 {photos.map((photo) => {
                     return(
                         <div className="card-container">
@@ -138,8 +155,9 @@ export class Cards extends Component {
                     )
                 })}
                 <div className="loadMore">
-                    <button>
+                    <button className="loadMoreButtonCards">
                         LOAD MORE
+                        <img className="imageLoadMore" src={Load} alt="" />
                     </button>
                 </div>
             </div>
