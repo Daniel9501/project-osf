@@ -14,6 +14,9 @@
     display: flex;
     align-items: center;
     margin-left: 57px;
+    border: none;
+    background: none;
+    padding: 0;
 }
 .navbarMenuDesktopContainer .imageLogoText .logoImage{
     height: 60px;
@@ -25,6 +28,7 @@
     height: 100%;
     display: block;
     font-size: 0;
+    text-align: left;
 }
 .navbarMenuDesktopContainer .imageLogoText .logoText{
     font-size: 2rem;
@@ -39,7 +43,8 @@
     font-size: 1rem;
     margin: 0;
     padding: 0;
-    line-height: 0;
+    line-height: 0.5;
+    letter-spacing: 2.5px;
 }
 .navbarMenuDesktopContainer .navbarMenuButtons{
     display: flex;
@@ -339,4 +344,3 @@
     margin-top: 10px;
     letter-spacing: -1px;
 }
-
