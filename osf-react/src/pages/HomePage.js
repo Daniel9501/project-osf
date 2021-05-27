@@ -10,7 +10,7 @@ import Banner from '../components/Main/Banner/Banner.js';
 import Products from '../components/Main/Products/Products.js';
 import Cookies from '../components/Cookies/Cookies.js';
 import NavbarMenuDesktop from '../components/NavbarMenuDesktop/NavbarMenuDesktop.js';
-
+import Cards from '../components/CLPMobile/Cards/Cards.js';
 import './HomePage.css';
 
 function HomePage() {
@@ -52,7 +52,11 @@ function HomePage() {
           <NavbarMenuDesktop />
         </div>
         <div className="secondRow">
+          <Slider />
           <Sales />
+        </div>
+        <div className="thirdRow">
+          <Cards />
         </div>
       </div>
     </div>

@@ -16,7 +16,6 @@
     }
     .entirePageDesktop .secondRow{
         display: flex;
-        justify-content: flex-end;
         padding-left: 55px;
         padding-right: 55px;
         padding-top: 106px;
