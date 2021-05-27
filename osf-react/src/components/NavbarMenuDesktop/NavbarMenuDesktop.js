@@ -18,13 +18,15 @@ function NavbarMenuDesktop() {
     return (
         <div className="nivigationContainer">
             <div className="navbarMenuDesktopContainer">
-                <div className="imageLogoText">
-                    <img className="logoImage" src={logo} alt="" />
-                    <div className="logoTextContainer">
-                        <p className="logoText">OSF</p>
-                        <span className="logoSpanText">Academy</span>
-                    </div>
-                </div>
+                <Link to="/Home">
+                    <button className="imageLogoText">
+                        <img className="logoImage" src={logo} alt="" />
+                        <div className="logoTextContainer">
+                            <p className="logoText">OSF</p>
+                            <span className="logoSpanText">Academy</span>
+                        </div>
+                    </button>
+                </Link>
                 <div className="navbarMenuButtons">
                     <button className="servicesButton" onClick={() => setShow(!show)} >SERVICES <img className="downArrow" src={arrow} alt="" /></button>
                     <button className="companyButton">COMPANY <img className="downArrow" src={arrow} alt="" /></button>
