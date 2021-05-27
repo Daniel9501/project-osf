@@ -9,6 +9,7 @@ import Services from '../components/Main/Services/Services.js';
 import Banner from '../components/Main/Banner/Banner.js';
 import Products from '../components/Main/Products/Products.js';
 import Cookies from '../components/Cookies/Cookies.js';
+import NavbarMenuDesktop from '../components/NavbarMenuDesktop/NavbarMenuDesktop.js';
 
 import './HomePage.css';
 
@@ -48,7 +49,7 @@ function HomePage() {
         <Cookies trigger={buttonCookies} setTrigger={setButtonCookies}></Cookies>
         <Cookies trigger={timedCookies} setTrigger={setTimedCookies}></Cookies>
         <div className="firstRow">
-          <NavbarMenu />
+          <NavbarMenuDesktop />
         </div>
         <div className="secondRow">
           <Sales />
