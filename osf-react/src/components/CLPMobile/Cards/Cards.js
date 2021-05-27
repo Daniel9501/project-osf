@@ -75,6 +75,15 @@ const photos = [
         currency: "$",
         cost: " 330.55",
         buy: "BUY NOW"
+    },
+    {
+        id: 'photo8',
+        name: 'Photo 8',
+        img: Card5,
+        title: "Hay - About A Lounge Chair AAL 93",
+        currency: "$",
+        cost: " 330.55",
+        buy: "BUY NOW"
     }
 ]
 export class Cards extends Component {
