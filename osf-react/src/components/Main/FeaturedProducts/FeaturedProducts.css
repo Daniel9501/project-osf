@@ -1,0 +1,186 @@
+@media only screen and (min-width: 900px) {
+    .featuredProductsContainer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 15px 27px;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1280px;
+        color: white;
+        text-align: center;
+    }
+    .featuredProductsContainer .titleFTPC{
+        font-size: 2rem;
+        font-weight: 900;
+        margin: 0;
+        padding: 0;
+        margin-bottom: -7px;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    .featuredProductsContainer .detailsFTPC{
+        font-size: 1rem;
+        letter-spacing: 1.3px;
+        font-weight: 300;
+        margin: 0;
+        padding: 0;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    .featuredProductsContainer .card-container{
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        height: 365px;
+        width: 271px;
+        max-width: 271px;
+        margin: 0;
+        padding: 0;
+    }
+    .img-container .imgContainerCards{
+        width: 100%;
+        height: 100%;
+        transition: .5s ease;
+    }
+    .img-container .imagePlusHeart{
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        margin-top: -15%;
+        margin-left: 1.8%;
+        opacity: 0;
+        transition: .5s ease;
+    }
+    .img-container:hover .imagePlusHeart{
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        margin-top: -15%;
+        margin-left: 1.8%;
+        opacity: 1;
+        transition: .5s ease;
+    }
+    .img-container .imagePlusHeart .plusImage{
+        margin: 10px;
+    }
+    .img-container .imagePlusHeart .heartImage{
+        margin: 10px;
+    }
+    .card-body .photoTitleH{
+        padding: 0;
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .card-body{
+        text-align: center;
+        padding-top: 19px;
+        padding-left: 45px;
+        padding-right: 45px;
+        height: 55px;
+    }
+    .btn{
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+    }
+    .featuredProductsContainer .titlea{
+        height: 38px;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(38,42,50);
+        margin-top: 10px;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    } 
+    .featuredProductsContainer .titlea .lineProductsa{
+        padding: 0;
+        margin:0;
+        width: 98%;
+        max-width: 1280px;
+        line-height: normal;
+        text-align: center;
+        position: relative;
+        color: white;
+        z-index: 9;
+        display: flex;
+        justify-content: center;
+        margin-top: -17px;
+    }
+    .featuredProductsContainer .titlea .lineProductsa::before{
+        content: "";
+        display: block;
+        width: 100%;
+        max-width: 236px;
+        height: 3px;
+        position: absolute;
+        background: rgb(255, 255, 255);
+        left: 28%;
+        top: 50%;
+        z-index: -2;
+    }
+    .featuredProductsContainer .titlea .lineProductsa::after{
+        content: "";
+        display: block;
+        width: 100%;
+        max-width: 236px;
+        height: 3px;
+        position: absolute;
+        background: rgb(255, 255, 255);
+        right: 28%;
+        top: 50%;
+        z-index: -2;
+    }
+
+    .featuredProductsContainer .titlea .lineProductsa .popularItemsa{
+        background-color: rgb(38,42,50);
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 2.2rem;
+        font-weight: 600;
+        letter-spacing: -3.7px;
+        color: rgb(255, 255, 255);
+        z-index: 10;
+    }
+    .featuredProductsContainer .previous{
+        border: none;
+        outline: none;
+        background-color: rgb(45,52,58);
+        height: 30px;
+        width: 30px;
+        margin-right: 240px;
+        margin-top: 4px;
+        z-index: 10;
+    }
+    .featuredProductsContainer .next{
+        border: none;
+        outline: none;
+        background-color: rgb(45,52,58);
+        height: 30px;
+        width: 30px;
+        margin-left: 240px;
+        z-index: 10;
+        margin-top: 4px;
+    }
+    .featuredProductsContainer .test{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        justify-content: space-between;
+        overflow-x: scroll;
+        height: 375px;
+        width: 100%;
+    }
+    .featuredProductsContainer .testa{
+        height: 100%;
+        width: 227%;
+        max-width: 5000px;
+        display: flex;
+        justify-content: space-between;
+        overflow:scroll;
+    }
+    .featuredProductsContainer .imagePlusHeart{
+        display: none;
+    }
+}

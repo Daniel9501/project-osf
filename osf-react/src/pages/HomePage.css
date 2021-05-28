@@ -35,5 +35,13 @@
         padding-left: 56px;
         padding-right: 56px;
     }
+    .entirePageDesktop .theFifthRow{
+        background-color: rgb(38,42,50);
+        padding-left: 56px;
+        padding-right: 56px;
+        padding-top: 44px;
+        height: 564px;
+        max-height: 564px;
+    }
 }
 

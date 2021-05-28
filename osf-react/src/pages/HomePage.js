@@ -11,6 +11,7 @@ import Products from '../components/Main/Products/Products.js';
 import Cookies from '../components/Cookies/Cookies.js';
 import NavbarMenuDesktop from '../components/NavbarMenuDesktop/NavbarMenuDesktop.js';
 import Cards from '../components/CLPMobile/Cards/Cards.js';
+import FeaturedProducts from '../components/Main/FeaturedProducts/FeaturedProducts.js';
 import './HomePage.css';
 
 function HomePage() {
@@ -57,6 +58,12 @@ function HomePage() {
         </div>
         <div className="thirdRow">
           <Cards />
+        </div>
+        <div className="fourthRow">
+          <Banner /> 
+        </div>
+        <div className="theFifthRow">
+          <FeaturedProducts /> 
         </div>
       </div>
     </div>
