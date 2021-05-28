@@ -213,7 +213,7 @@
         margin-left: 25px;
     }
     .loadMore .loadMoreButtonCards{
-        margin: 49px 0 0 0;
+        margin: 29px 0 0 0;
         padding: 0 43px;
         height: 37px;
         width: 100%;
@@ -253,7 +253,7 @@
         max-width: 1280;
         height: 2px;
         position: absolute;
-        background: rgb(229,226,223);
+        background: rgba(229, 226, 223, 0.150);
         left: 0;
         top: 50%;
         z-index: -2;
@@ -265,7 +265,7 @@
         max-width: 1280;
         height: 2px;
         position: absolute;
-        background: rgb(229,226,223);
+        background: rgba(229, 226, 223, 0.150);
         right: 0;
         top: 50%;
         z-index: -2;
