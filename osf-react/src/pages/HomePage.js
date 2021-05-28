@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import NavbarMenu from '../components/NavbarMenu/NavbarMenu.js';
 import Footer from '../components/Footer/Footer.js';
 import Pagesfooter from '../components/PagesFooter/PagesFooter.js';
+import PagesfooterDesktop from '../components/PagesFooter/PagesFooterDesktop.js';
 import Slider from '../components/Main/Slider/Slider.js';
 import Sales from '../components/Main/Sales/Sales.js';
 import Services from '../components/Main/Services/Services.js';
@@ -12,6 +13,7 @@ import Cookies from '../components/Cookies/Cookies.js';
 import NavbarMenuDesktop from '../components/NavbarMenuDesktop/NavbarMenuDesktop.js';
 import Cards from '../components/CLPMobile/Cards/Cards.js';
 import FeaturedProducts from '../components/Main/FeaturedProducts/FeaturedProducts.js';
+import TitleCards from '../components/CLPMobile/Cards/TitleCards.js'
 import './HomePage.css';
 
 function HomePage() {
@@ -46,7 +48,7 @@ function HomePage() {
           <Footer /> 
         </div>
       </div>
-      <div className="entirePageDesktop">
+      <div className="entirePageDesktopa">
         <Cookies trigger={buttonCookies} setTrigger={setButtonCookies}></Cookies>
         <Cookies trigger={timedCookies} setTrigger={setTimedCookies}></Cookies>
         <div className="firstRow">
@@ -57,6 +59,7 @@ function HomePage() {
           <Sales />
         </div>
         <div className="thirdRow">
+          <TitleCards />
           <Cards />
         </div>
         <div className="fourthRow">
@@ -64,6 +67,12 @@ function HomePage() {
         </div>
         <div className="theFifthRow">
           <FeaturedProducts /> 
+        </div>
+        <div className="theSixthRow">
+          <Services />
+        </div>
+        <div className="theSeventhRow">
+          <PagesfooterDesktop />
         </div>
       </div>
     </div>

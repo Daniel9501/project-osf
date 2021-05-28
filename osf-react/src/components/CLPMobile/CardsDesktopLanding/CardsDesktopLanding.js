@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
-
 import Card1 from '../../Img/Main/Products/card1.webp';
 import Card2 from '../../Img/Main/Products/card2.webp';
 import Card3 from '../../Img/Main/Products/card3.webp';
@@ -11,7 +10,7 @@ import Card7 from '../../Img/Main/Products/card7.webp';
 import Plus from '../../Img/Plus.webp';
 import Heart from '../../Img/Heart.webp';
 
-import './FeaturedProducts.css';
+import './CardsDesktopLanding.css';
 
 const photos = [
     {
@@ -96,10 +95,8 @@ const photos = [
         buy: "BUY NOW"
     }
 ]
-
-class FeaturedProducts extends Component {
+export class Cards extends Component {
     constructor(){
-
         super()
         this.state={
             show:false
@@ -109,25 +106,15 @@ class FeaturedProducts extends Component {
         this.setState({
             show:true,
             id:id
+            
         })
     }
-     
-    render() { 
+    render() {
         return (
-            <div className="featuredProductsContainer">
-                <h1 className="titleFTPC">Featured Products</h1>
-                <h1 className="detailsFTPC">Unde omnis iste natus error sit voluptatem</h1>
-                <div className="titlea">
-                    <h4 className="lineProductsa">
-                        <button className="previous">a</button>
-                        <span className="popularItemsa">
-                            / / /
-                        </span>
-                        <button className="next">b</button>
-                    </h4>
+            <div className="container">
+                <div className="titleab">
+                    12,931 <span className="resultsTitlea">results in apparel</span>
                 </div>
-                <div className="test">
-                <div className="testa">
                 {photos.map((photo) => {
                     return(
                         <div className="card-container">
@@ -162,11 +149,14 @@ class FeaturedProducts extends Component {
                         </div> 
                     )
                 })}
-                </div>
+                <div className="loadMorea">
+                    <button className="loadMoreButtonCardsa">
+                        LOAD MORE
+                    </button>
                 </div>
             </div>
         )
     }
 }
 
-export default FeaturedProducts
+export default Cards

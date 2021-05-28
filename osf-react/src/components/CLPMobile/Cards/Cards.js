@@ -113,13 +113,6 @@ export class Cards extends Component {
     render() {
         return (
             <div className="container">
-                <div className="titlea">
-                    <h4 className="lineProductsa">
-                        <span className="popularItemsa">
-                            Popular Items
-                        </span>
-                    </h4>
-                </div>
                 {photos.map((photo) => {
                     return(
                         <div className="card-container">

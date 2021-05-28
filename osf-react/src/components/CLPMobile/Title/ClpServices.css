@@ -45,3 +45,17 @@
     font-weight: 700;
     color: rgb(69,65,62);
 }
+@media only screen and (min-width: 900px) {
+    .clpContainer .title h4{
+        margin:0;
+    }
+    .title h4 span{
+        background-color: rgb(242,237,234);
+        padding-left: 99px;
+        padding-right:99px;
+        z-index: 1000;
+        font-size: 3rem;
+        font-weight: 900;
+        color: rgb(69,65,62);
+    }
+}

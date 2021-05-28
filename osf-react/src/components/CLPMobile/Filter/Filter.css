@@ -44,7 +44,6 @@
     padding: 0;
     width: 100%;
     margin-left: 5%;
-    
 }
 .row .list ol li{
     display:inline-block;
@@ -153,4 +152,37 @@ select{
     border-right: var(--size) solid transparent;
     border-top: var(--size) solid rgb(162,160,158);
     top: 50%;
+}
+.filterForDesktop{
+    display: none;
+}
+@media only screen and (min-width: 900px) {
+    .filterForDesktop{
+        display: inherit;
+        margin: 0;
+        margin-top: 44px;
+    }
+    .aaa{
+        display: none;
+    }
+    .filterForDesktop .filter{
+        padding: 33px 34px 33px 30px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        column-gap: 100px;
+        margin: 0;
+    }
+    .filterForDesktop .filter .row .list ol li{
+        width: 16px;
+        height: 16px;
+        transition: .2s;
+    }
+    .filterForDesktop .filter .row .list ol{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        margin-left: 9%;
+    }
+
 }

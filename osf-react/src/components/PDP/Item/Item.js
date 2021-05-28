@@ -3,6 +3,7 @@ import '../../../../node_modules/semantic-ui-css/semantic.min.css'
 import './Item.css';
 import { Dropdown } from 'semantic-ui-react'
 
+
 import Pdp1 from '../../Img/PdpImages/PG.10216885.JJ8UTXX.BZ.jpg';
 import Pdp2 from '../../Img/PdpImages/PG.10216885.JJ8UTXX.PZ.jpg';
 import Pdp3 from '../../Img/PdpImages/PG.10216885.JJ169XX.BZ.jpg';
@@ -19,8 +20,8 @@ class Item extends React.Component{
       {
         "_id": "1",
         "src": [
-            Pdp1,
             Pdp2,
+            Pdp1,
             Pdp3,
             Pdp4
             
@@ -44,8 +45,6 @@ class Item extends React.Component{
       }
       images[index].className = "active";
   };
-
-
 
   render(){
     const {products, index} = this.state;
@@ -121,7 +120,7 @@ class Item extends React.Component{
                     <button className="readMore">Read more</button>
                     <div className="bottomDiv">
                         <button className="shareButton styleButton">Share</button>
-                        <button className="facebookButton styleButton"><img src={f} alt=""></img></button>
+                        <button className="facebookButtona styleButton"><img src={f} alt=""></img></button>
                         <button className="googleButton styleButton"><img src={g} alt="" /></button>
                         <button className="twitterButton styleButton"><img src={t} alt="" /></button>
                         <button className="pinterestButton styleButton"><img src={p} alt="" /></button>
@@ -130,6 +129,7 @@ class Item extends React.Component{
             </div>
           ))
         }
+        
       </div>
     );
   };
