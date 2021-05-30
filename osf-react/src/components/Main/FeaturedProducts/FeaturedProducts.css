@@ -94,11 +94,12 @@
         margin-top: 10px;
         grid-column-start: 1;
         grid-column-end: 5;
+        gap: 0;
     } 
-    .featuredProductsContainer .titlea .lineProductsa{
+    .featuredProductsContainer .titlea .lineProductsHP{
         padding: 0;
         margin:0;
-        width: 98%;
+        width: 100%;
         max-width: 1280px;
         line-height: normal;
         text-align: center;
@@ -109,7 +110,7 @@
         justify-content: center;
         margin-top: -17px;
     }
-    .featuredProductsContainer .titlea .lineProductsa::before{
+    .featuredProductsContainer .titlea .lineProductsHP::before{
         content: "";
         display: block;
         width: 100%;
@@ -121,7 +122,7 @@
         top: 50%;
         z-index: -2;
     }
-    .featuredProductsContainer .titlea .lineProductsa::after{
+    .featuredProductsContainer .titlea .lineProductsHP::after{
         content: "";
         display: block;
         width: 100%;
@@ -134,22 +135,20 @@
         z-index: -2;
     }
 
-    .featuredProductsContainer .titlea .lineProductsa .popularItemsa{
+    .featuredProductsContainer .titlea .lineProductsHP .popularItemsa{
         background-color: rgb(38,42,50);
         padding-left: 10px;
         padding-right: 10px;
         font-size: 2.2rem;
         font-weight: 600;
-        letter-spacing: -3.7px;
+        letter-spacing: 1px;
         color: rgb(255, 255, 255);
         z-index: 10;
     }
     .featuredProductsContainer .previous{
         border: none;
         outline: none;
-        background-color: rgb(45,52,58);
-        height: 30px;
-        width: 30px;
+        background-color: rgba(45, 52, 58, 0);
         margin-right: 240px;
         margin-top: 4px;
         z-index: 10;
@@ -157,9 +156,7 @@
     .featuredProductsContainer .next{
         border: none;
         outline: none;
-        background-color: rgb(45,52,58);
-        height: 30px;
-        width: 30px;
+        background-color: rgba(45, 52, 58, 0);
         margin-left: 240px;
         z-index: 10;
         margin-top: 4px;
@@ -175,10 +172,10 @@
     .featuredProductsContainer .testa{
         height: 100%;
         width: 227%;
-        max-width: 5000px;
+        max-width: 2340px;
         display: flex;
         justify-content: space-between;
-        overflow:scroll;
+        overflow: hidden;
     }
     .featuredProductsContainer .imagePlusHeart{
         display: none;

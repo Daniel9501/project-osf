@@ -1,0 +1,98 @@
+.entirePageMobileR{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(242,237,234);
+}
+
+.mainPage{
+    padding-top: 62px;
+}
+.entirePageDesktopR{
+    display: none;
+}
+@media only screen and (min-width: 900px) {
+    .entirePageMobileR {
+      display: none;
+    }
+    .entirePageDesktopR{
+        display: inherit;
+    }
+    .entirePageDesktopR .firstRow{
+        position: fixed;
+        background-color: rgba(222, 184, 135, 0.57);
+        width: 100%;
+        height: 80px;
+        border-bottom: 2px solid rgb(243,240,234);
+        z-index:1000;
+    }
+    .entirePageDesktopR .theFifthRow{
+        padding-left: 56px;
+        padding-right: 56px;
+        padding-top: 130px;
+        width: 100%;
+        height: 600px;
+        max-height: 600px;
+        background-color: rgb(241,241,241);
+    }
+    .entirePageDesktopR .theSeventhRow{
+        margin: 0;
+        padding: 0;
+        height: 360px;
+        max-height: 360px;
+        padding-left: 55px;
+        padding-right: 55px;
+        padding-top: 40px;
+    }
+    .entirePageDesktopR .theFifthRow .timerContainer{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-color: white;
+        padding: 40px 10% 40px 10%;
+    }
+    .entirePageDesktopR .theFifthRow .timerContainer h3.timeTitle{
+        color: black;
+        font-size: 3rem;
+    }
+    .entirePageDesktopR .theFifthRow .timerContainer h3.timeText{
+        color: black;
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+    }
+    .entirePageDesktopR .theFifthRow .timerContainer .formDetails .inputField{
+        width: 50%;
+        height: 30px;
+    }
+    .entirePageDesktopR .theFifthRow .timerContainer .formDetails .arrowForm{
+        position: absolute;
+        border-radius: 100%;
+        height: 20px;
+        margin-top: 5px;
+        margin-left: -30px;
+    }
+    .entirePageDesktopR .theFifthRow .timerContainer .containerGridRelease{
+        width: 100%;
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        justify-content: center;
+        justify-items: center;
+    }
+    .entirePageDesktopR .theFifthRow .timerContainer .containerGridRelease .circleData{
+        width: 130px;
+        height: 130px;
+        border: 4px solid rgb(171, 204, 167);
+        background: none;
+        border-radius: 100%;
+        font-size: 4rem;
+        font-weight: 800;
+    }
+    .entirePageDesktopR .theFifthRow .timerContainer .containerGridRelease .textDataRelease{
+        color: black;
+        font-size: 1.4rem;
+        margin-top: 10px;
+    }
+
+}

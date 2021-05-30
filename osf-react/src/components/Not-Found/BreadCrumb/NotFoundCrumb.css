@@ -17,3 +17,9 @@
 .clpBread a .homeCrumb{
     color: rgb(132,188,34);
 }
+@media only screen and (min-width: 900px) {
+    .clpBread{
+        width: 9%;
+        font-size: 1rem;
+    }
+}

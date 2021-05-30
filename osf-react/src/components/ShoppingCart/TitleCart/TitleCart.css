@@ -18,8 +18,6 @@
     color: rgb(0, 0, 0);
     width: auto;
 }
-
-
 .pdpBread .breadCrumbPdp a .homeCrumb{
     color: rgb(132,188,34);
 }
@@ -76,4 +74,31 @@
     right: 0;
     top: 50%;
     z-index: -2;
+}
+@media only screen and (min-width: 900px) {
+    .pdpBread{
+        font-size: .9rem;
+        margin-top: 10px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .pdpBread .breadCrumbPdp{
+        width: 13%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .pdpBread  .titlea{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .pdpBread .titlea .lineProductsa .popularItemsa{
+        font-size: 3rem;
+        font-weight: 900;
+        color: rgba(0, 0, 0, 0.782);
+    }
 }

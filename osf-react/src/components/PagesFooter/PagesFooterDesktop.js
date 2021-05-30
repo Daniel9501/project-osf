@@ -7,6 +7,7 @@ import Facebook from '../Img/Socialicons/f.png';
 import Google from '../Img/Socialicons/g.png';
 import Twitter from '../Img/Socialicons/t.png';
 import Pinterest from '../Img/Socialicons/p.png';
+import HourGlass from '../Img/clepsidra.png';
 
 function PagesfooterDesktop() {
     return(
@@ -62,6 +63,9 @@ function PagesfooterDesktop() {
                 <Link to={{ pathname: "https://www.google.com" }} target="_blank"><img className="google dist" src={Google} alt="Google" /></Link>
                 <Link to={{ pathname: "https://twitter.com" }} target="_blank"><img className="twitter dist" src={Twitter} alt="Twitter" /></Link>
                 <Link to={{ pathname: "https://www.pinterest.com" }} target="_blank"><img className="pinterest dist" src={Pinterest} alt="Pinterest" /></Link>
+            </div>
+            <div className="hourGlassContainer">
+                <Link to="/Release"><img className="hourGlass" src={HourGlass} alt="HourGlass" /></Link>
             </div>
         </div>
     );

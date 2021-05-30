@@ -10,6 +10,8 @@ import Card6 from '../../Img/Main/Products/card6.webp';
 import Card7 from '../../Img/Main/Products/card7.webp';
 import Plus from '../../Img/Plus.webp';
 import Heart from '../../Img/Heart.webp';
+import ArrorLeft from '../../Img/Desktop/arrow-left.webp';
+import ArrorRight from '../../Img/Desktop/arrow-right.webp';
 
 import './FeaturedProducts.css';
 
@@ -85,15 +87,6 @@ const photos = [
         currency: "$",
         cost: " 330.55",
         buy: "BUY NOW"
-    },    
-    {
-        id: 'photo9',
-        name: 'Photo 9',
-        img: Card3,
-        title: "Activate Facial Mask and Charcoal Soap",
-        currency: "$",
-        cost: " 129.55",
-        buy: "BUY NOW"
     }
 ]
 
@@ -118,12 +111,16 @@ class FeaturedProducts extends Component {
                 <h1 className="titleFTPC">Featured Products</h1>
                 <h1 className="detailsFTPC">Unde omnis iste natus error sit voluptatem</h1>
                 <div className="titlea">
-                    <h4 className="lineProductsa">
-                        <button className="previous">a</button>
+                    <h4 className="lineProductsHP">
+                        <button className="previous">
+                            <img src={ArrorLeft} alt="" />
+                        </button>
                         <span className="popularItemsa">
-                            / / /
+                            ///
                         </span>
-                        <button className="next">b</button>
+                        <button className="next">
+                            <img src={ArrorRight} alt="" />
+                        </button>
                     </h4>
                 </div>
                 <div className="test">

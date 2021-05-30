@@ -1,13 +1,20 @@
 import React from 'react'
+import { useState } from "react";
 import image from '../../Img/PdpImages/PG.10216885.JJ8UTXX.PZ.jpg';
 import image2 from '../../Img/Shopping/x.webp';
 import './BodyCart.css';
 
 function BodyCart() {
+    const [value, setValue] = useState(1);
+    const onAdd = () => setValue(value + 1);
+    const onSubtract = () => setValue(value - 1);
+    const [value1, setValue1] = useState(1);
+    const onAdd1 = () => setValue1(value1 + 1);
+    const onSubtract1 = () => setValue1(value1 - 1);
     return (
         <div className="bodyPage">
             <div className="firstBody">
-                <div className="details">
+                <div className={value < 1 ? "detailsNone" : "details"}>
                     
                     <div className="titlep">Kristina Dam Oak Table With White Marble Top</div>
                     <div className="pricep">$2,195.00</div>
@@ -15,19 +22,19 @@ function BodyCart() {
                         <img className="productImage" src={image} alt="" />
                     </div>
                     <div className="increase">
-                        <button className="minus">-</button>
-                        <button className="number">1</button>
-                        <button className="plus">+</button>
+                        <button className="minus" onClick={onSubtract}>-</button>
+                        <button className="number">{value}</button>
+                        <button className="plus" onClick={onAdd}>+</button>
                     </div>
                     <div className="lastDiva"> 
                             $2,195
                     </div>
                     <button className="deleteButton">
-                            <img className="cancelImage" src={image2} alt="" />
+                            <img className="cancelImage" src={image2} alt=""/>
                     </button>
                 </div>
                 <br />
-                <div className="details">
+                <div className={value1 < 1 ? "detailsNone" : "details"}>
                     
                     <div className="titlep">Kristina Dam Oak Table With White Marble Top</div>
                     <div className="pricep">$2,195.00</div>
@@ -35,9 +42,9 @@ function BodyCart() {
                         <img className="productImage" src={image} alt="" />
                     </div>
                     <div className="increase">
-                        <button className="minus">-</button>
-                        <button className="number">1</button>
-                        <button className="plus">+</button>
+                        <button className="minus" onClick={onSubtract1}>-</button>
+                        <button className="number">{value1}</button>
+                        <button className="plus" onClick={onAdd1}>+</button>
                     </div>
                     <div className="lastDiva"> 
                             $2,195
@@ -49,19 +56,19 @@ function BodyCart() {
                 
             </div>
             <div className="secondBody">
-                <div className="couponCode">
+                <div className="couponCode couponButtonGrid1">
                     <input className="couponButton" type="text" placeholder="Enter Coupon Code"></input>
                     <button className="applyButton">APPLY</button>
                 </div>
-                <div className="couponCode couponCodeMargin">
+                <div className="couponCode couponCodeMargin couponButtonGrid2">
                     <button className="applyButtona">UPDATE CART</button>
                     <button className="applyButtonab">PROCEED TO CHECKOUT</button>
                 </div>
-                <div className="couponCode couponCodeMargin">
+                <div className="couponCode couponCodeMargin couponButtonGrid3">
                     <span className="sampleText">CART SUBTOTAL</span>
-                    <span className="sampleTextBold">$3,489</span>
+                    <span className="sampleTextBold sampleTextBoldLeft">$3,489</span>
                 </div>
-                <div className="couponCode couponCodeMargin">
+                <div className="couponCode couponCodeMargin couponButtonGrid4">
                     <span className="sampleTextBold">SHIPPING<br />AND<br />HANDLING</span>
                     <ul>
                         <li>
@@ -86,7 +93,7 @@ function BodyCart() {
                         </li>
                     </ul>
                 </div>
-                <div className="couponCode couponCodeMargin">
+                <div className="couponCode couponCodeMargin couponButtonGrid5">
                     <span className="sampleTextBold">ORDER TOTAL:</span>
                     <span className="sampleTextBold sampleTextBoldSize">$3,489</span>
                 </div>

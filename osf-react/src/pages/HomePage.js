@@ -28,7 +28,7 @@ function HomePage() {
 
   return (
     <div>
-      <div className="entirePageMobile">
+      <div className="entirePageMobileHP">
         <Cookies trigger={buttonCookies} setTrigger={setButtonCookies}></Cookies>
         <Cookies trigger={timedCookies} setTrigger={setTimedCookies}></Cookies>
         <div className="navigationMenu">
@@ -48,7 +48,7 @@ function HomePage() {
           <Footer /> 
         </div>
       </div>
-      <div className="entirePageDesktopa">
+      <div className="entirePageDesktopHP">
         <Cookies trigger={buttonCookies} setTrigger={setButtonCookies}></Cookies>
         <Cookies trigger={timedCookies} setTrigger={setTimedCookies}></Cookies>
         <div className="firstRow">

@@ -27,7 +27,8 @@
     font-size: 5rem;
     font-weight: 800;
     color: rgb(132,188,34);
-    position: inherit;
+    position: absolute;
+    margin-left: 19%;
 }
 .bodyContainer .details{
     width: 100%;
@@ -69,7 +70,7 @@
     padding-left: 10px;
     background: url(D:\GIT\project-osf\osf-react\src\components\Img\NotFound\search.webp) right no-repeat;
     background-size: 14px;
-    background-position: middle;
+    background-position: 97% 50%;
 }
 .details .search:focus{
     outline: none;
@@ -80,4 +81,82 @@
     margin-bottom: 15px;
     color: black;
     width: 100%;
+}
+@media only screen and (min-width: 900px) {
+    .bodyContainer{
+        width: 100%;
+        background-color: white;
+        margin: 0;
+        padding-bottom: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .bodyContainer .stopImageContainer .stopImage{
+        position: absolute;
+        height: 280px;
+        margin-top: 3%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .bodyContainer .oops{
+        width: 80%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        position: absolute;
+    }
+    .bodyContainer .oops .oopsa{
+        font-size: 8rem;
+        font-weight: 900;
+        margin-top: 9%;
+        margin-left: 9%;
+        letter-spacing: -5px;
+    }
+    .bodyContainer .details{
+        padding: 0;
+        margin-left: -100px;
+        text-align: left;
+        justify-content: left;
+        padding-right: 93px;
+    }
+    
+    .bodyContainer .details .sorry{
+        font-size: 1.6rem;
+        letter-spacing: 0px;
+        margin-top: 30px;
+    }
+    .bodyContainer .details .sorryText{
+        margin-top: 0px;
+    }
+    
+    .bodyContainer .details .goBack{
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        color: rgb(132,188,34);
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        margin-top: 30px;
+    }
+    .bodyContainer .details .search{
+        background-color: rgba(0, 0, 0, 0);
+        border: 3px solid rgb(241,237,234);
+        width: 100%;
+        border-radius: 20px;
+        padding-left: 10px;
+        background: url(D:\GIT\project-osf\osf-react\src\components\Img\NotFound\search.webp) right no-repeat;
+        background-size: 14px;
+        background-position: 97% 50%;
+        padding: 8px 10px 8px 10px;
+    }
+    .details .search:focus{
+        outline: none;
+    }
+    
+    .details .searchOurSite{
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: black;
+        width: 100%;
+        font-size: 1.2rem;
+    }
 }
