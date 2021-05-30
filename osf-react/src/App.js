@@ -7,6 +7,7 @@ import NotFoundPage from './pages/NotFound.js';
 import CategoryLandingPage from './pages/CategoryLandingPage.js';
 import ProductDetailedPage from './pages/ProductDetailedPage.js';
 import ShoppingCart from './pages/ShoppingCart.js';
+import Release from './pages/Release.js';
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                 <Route exact path="/CategoryLanding" component={CategoryLandingPage} />
                 <Route exact path="/ProductDetailed" component={ProductDetailedPage} />
                 <Route exact path="/ShoppingCart" component={ShoppingCart} />
+                <Route exact path="/Release" component={Release} />
                 <Redirect to="/404" />
             </Switch>
         </Router>
