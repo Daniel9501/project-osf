@@ -13,7 +13,7 @@ import './NotFound.css';
 function NotFoundPage() {
   return (
     <div>
-      <div className="entirePageMobileNFP">
+      <div className="entirePageMobileNFPA">
         <div className="navigationMenu">
             <NavbarMenu />
         </div>
@@ -25,7 +25,7 @@ function NotFoundPage() {
             <Footer /> 
         </div> 
       </div>
-      <div className="entirePageDesktopNFP">
+      <div className="entirePageDesktopNFPA">
         <div className="firstRow">
           <NavbarMenuDesktop />
         </div>
